@@ -234,7 +234,7 @@ def insertIntoMap(categoryHashMap: dict, key: str, hashList: list[str]) -> dict:
 #########################################################################################################################################
 
 spellSyntaxes = {
-    "SPELLNAME" : ["UI_TT_#SPELL_NAME"],
+    #"SPELLNAME" : ["UI_TT_#SPELL_NAME"],
     "PROPERTY1" : ["UI_TT_#SPELL_PROPERTIES_1"],
     "PROPERTY2" : ["UI_TT_#SPELL_PROPERTIES_2"],
     "PROPERTY3" : ["UI_TT_#SPELL_PROPERTIES_3"],
@@ -254,7 +254,7 @@ def getSpellCategoryHashMap(BPID: int, spells: list[str]) -> dict[str, list[str]
     nameList.append(h.hashgen("BLUEPRINT_" + str(BPID)))
     for spell in spells:
         nameList.append(h.hashgen("UI_TT_" + str(spell) + "_NAME"))
-    categoryHashMap = insertIntoMap(categoryHashMap, "NAME", nameList)
+    categoryHashMap = insertIntoMap(categoryHashMap, "SPELLNAME", nameList)
 
     # SPELL PROPERTIES & MODS
     for syntaxItem in spellSyntaxes.items():

@@ -72,15 +72,9 @@
                 },
                 "SPELLS": [
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1242927181",
-                                "1271494322"
-                            ],
-                            "VALUE": "Seelenhammer"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1242927181",
                                 "1271494322"
                             ],
                             "VALUE": "Seelenhammer"
@@ -147,15 +141,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1242927180",
-                                "3591750607"
-                            ],
-                            "VALUE": "Schlaghagel"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1242927180",
                                 "3591750607"
                             ],
                             "VALUE": "Schlaghagel"
@@ -222,15 +210,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1242927182",
-                                "3103047680"
-                            ],
-                            "VALUE": "Wirbelsprung"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1242927182",
                                 "3103047680"
                             ],
                             "VALUE": "Wirbelsprung"
@@ -297,15 +279,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1242927178",
-                                "2460868597"
-                            ],
-                            "VALUE": "Befl\u00fcgeln"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1242927178",
                                 "2460868597"
                             ],
                             "VALUE": "Befl\u00fcgeln"
@@ -372,15 +348,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1242927179",
-                                "0779594718"
-                            ],
-                            "VALUE": "Kampfhaltung"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1242927179",
                                 "0779594718"
                             ],
                             "VALUE": "Kampfhaltung"
@@ -569,15 +539,9 @@
                 },
                 "SPELLS": [
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1242915432",
-                                "1385197087"
-                            ],
-                            "VALUE": "Blitz"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1242915432",
                                 "1385197087"
                             ],
                             "VALUE": "Blitz"
@@ -644,15 +608,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1242927177",
-                                "3668446653"
-                            ],
-                            "VALUE": "Lichts\u00e4ule"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1242927177",
                                 "3668446653"
                             ],
                             "VALUE": "Lichts\u00e4ule"
@@ -719,15 +677,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1242915431",
-                                "4245061941"
-                            ],
-                            "VALUE": "Bekehrung"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1242915431",
                                 "4245061941"
                             ],
                             "VALUE": "Bekehrung"
@@ -794,15 +746,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1242915433",
-                                "4260234127"
-                            ],
-                            "VALUE": "Heilen"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1242915433",
                                 "4260234127"
                             ],
                             "VALUE": "Heilen"
@@ -869,15 +815,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1242915434",
-                                "2032479703"
-                            ],
-                            "VALUE": "Lichtaura"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1242915434",
                                 "2032479703"
                             ],
                             "VALUE": "Lichtaura"
@@ -1066,15 +1006,9 @@
                 },
                 "SPELLS": [
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1242927290",
-                                "2399555370"
-                            ],
-                            "VALUE": "Schwertfeuer"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1242927290",
                                 "2399555370"
                             ],
                             "VALUE": "Schwertfeuer"
@@ -1141,15 +1075,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1242927186",
-                                "2747637447"
-                            ],
-                            "VALUE": "Schockwelle"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1242927186",
                                 "2747637447"
                             ],
                             "VALUE": "Schockwelle"
@@ -1216,15 +1144,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1242927185",
-                                "1330121435"
-                            ],
-                            "VALUE": "Notschild"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1242927185",
                                 "1330121435"
                             ],
                             "VALUE": "Notschild"
@@ -1291,15 +1213,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1242927184",
-                                "1077800425"
-                            ],
-                            "VALUE": "Energieschild"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1242927184",
                                 "1077800425"
                             ],
                             "VALUE": "Energieschild"
@@ -1366,15 +1282,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1242927183",
-                                "1205840625"
-                            ],
-                            "VALUE": "BeeEffGee"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1242927183",
                                 "1205840625"
                             ],
                             "VALUE": "BeeEffGee"
@@ -1523,15 +1433,9 @@
                 },
                 "SPELLS": [
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1242927976",
-                                "1004300792"
-                            ],
-                            "VALUE": "Konzentrierter Angriff"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1242927976",
                                 "1004300792"
                             ],
                             "VALUE": "Konzentrierter Angriff"
@@ -1598,15 +1502,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1242927975",
-                                "2131877725"
-                            ],
-                            "VALUE": "Angriffsserie"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1242927975",
                                 "2131877725"
                             ],
                             "VALUE": "Angriffsserie"
@@ -1673,15 +1571,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1242928081",
-                                "3143830277"
-                            ],
-                            "VALUE": "Sprint"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1242928081",
                                 "3143830277"
                             ],
                             "VALUE": "Sprint"
@@ -1748,15 +1640,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1242928082",
-                                "3693402776"
-                            ],
-                            "VALUE": "Wirbeln"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1242928082",
                                 "3693402776"
                             ],
                             "VALUE": "Wirbeln"
@@ -1823,15 +1709,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1242927977",
-                                "3456539825"
-                            ],
-                            "VALUE": "Projektilfokus"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1242927977",
                                 "3456539825"
                             ],
                             "VALUE": "Projektilfokus"
@@ -2020,15 +1900,9 @@
                 },
                 "SPELLS": [
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1242928089",
-                                "0689156728"
-                            ],
-                            "VALUE": "Qu\u00e4len"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1242928089",
                                 "0689156728"
                             ],
                             "VALUE": "Qu\u00e4len"
@@ -2095,15 +1969,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1242928084",
-                                "2878938862"
-                            ],
-                            "VALUE": "Krankheit"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1242928084",
                                 "2878938862"
                             ],
                             "VALUE": "Krankheit"
@@ -2170,15 +2038,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1242928194",
-                                "1350937935"
-                            ],
-                            "VALUE": "Fluch des Verderbens"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1242928194",
                                 "1350937935"
                             ],
                             "VALUE": "Fluch des Verderbens"
@@ -2245,15 +2107,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1242928090",
-                                "2365072390"
-                            ],
-                            "VALUE": "Voodoo-Totem"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1242928090",
                                 "2365072390"
                             ],
                             "VALUE": "Voodoo-Totem"
@@ -2320,15 +2176,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1242928195",
-                                "3932000227"
-                            ],
-                            "VALUE": "Gequ\u00e4lte Seele"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1242928195",
                                 "3932000227"
                             ],
                             "VALUE": "Gequ\u00e4lte Seele"
@@ -2517,15 +2367,9 @@
                 },
                 "SPELLS": [
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1242928083",
-                                "0621065911"
-                            ],
-                            "VALUE": "Bodenspie\u00dfe"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1242928083",
                                 "0621065911"
                             ],
                             "VALUE": "Bodenspie\u00dfe"
@@ -2592,15 +2436,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1242928088",
-                                "3225040266"
-                            ],
-                            "VALUE": "Wucherwurzel"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1242928088",
                                 "3225040266"
                             ],
                             "VALUE": "Wucherwurzel"
@@ -2667,15 +2505,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1242928085",
-                                "1135937509"
-                            ],
-                            "VALUE": "Handauflegen"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1242928085",
                                 "1135937509"
                             ],
                             "VALUE": "Handauflegen"
@@ -2742,15 +2574,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1242928087",
-                                "2898930036"
-                            ],
-                            "VALUE": "Wacher Verstand"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1242928087",
                                 "2898930036"
                             ],
                             "VALUE": "Wacher Verstand"
@@ -2817,15 +2643,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1242928086",
-                                "2717410917"
-                            ],
-                            "VALUE": "Rindenhaut"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1242928086",
                                 "2717410917"
                             ],
                             "VALUE": "Rindenhaut"
@@ -2974,15 +2794,9 @@
                 },
                 "SPELLS": [
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "3735888881",
-                                "3176522979"
-                            ],
-                            "VALUE": "Harter Schlag"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "3735888881",
                                 "3176522979"
                             ],
                             "VALUE": "Harter Schlag"
@@ -3049,15 +2863,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "3735888880",
-                                "2401696647"
-                            ],
-                            "VALUE": "Befreiungsschlag"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "3735888880",
                                 "2401696647"
                             ],
                             "VALUE": "Befreiungsschlag"
@@ -3124,15 +2932,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "3735888986",
-                                "2663466740"
-                            ],
-                            "VALUE": "Sturmlauf"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "3735888986",
                                 "2663466740"
                             ],
                             "VALUE": "Sturmlauf"
@@ -3199,15 +3001,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "3735888882",
-                                "2243878983"
-                            ],
-                            "VALUE": "Kampfruf"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "3735888882",
                                 "2243878983"
                             ],
                             "VALUE": "Kampfruf"
@@ -3274,15 +3070,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "3735888987",
-                                "1935059016"
-                            ],
-                            "VALUE": "Willensst\u00e4rke"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "3735888987",
                                 "1935059016"
                             ],
                             "VALUE": "Willensst\u00e4rke"
@@ -3415,15 +3205,9 @@
                 },
                 "SPELLS": [
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "3735864129",
-                                "1933963364"
-                            ],
-                            "VALUE": "Attacke"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "3735864129",
                                 "1933963364"
                             ],
                             "VALUE": "Attacke"
@@ -3490,15 +3274,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "3735901758",
-                                "2242288422"
-                            ],
-                            "VALUE": "Stampfsprung"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "3735901758",
                                 "2242288422"
                             ],
                             "VALUE": "Stampfsprung"
@@ -3565,15 +3343,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "3735901759",
-                                "2674711949"
-                            ],
-                            "VALUE": "Standarte"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "3735901759",
                                 "2674711949"
                             ],
                             "VALUE": "Standarte"
@@ -3640,15 +3412,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "3735901757",
-                                "2542409772"
-                            ],
-                            "VALUE": "Kampfrausch"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "3735901757",
                                 "2542409772"
                             ],
                             "VALUE": "Kampfrausch"
@@ -3715,15 +3481,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "3735888876",
-                                "1845541117"
-                            ],
-                            "VALUE": "Umlenkung"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "3735888876",
                                 "1845541117"
                             ],
                             "VALUE": "Umlenkung"
@@ -3912,15 +3672,9 @@
                 },
                 "SPELLS": [
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "3735877130",
-                                "1874771551"
-                            ],
-                            "VALUE": "Geisterhand"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "3735877130",
                                 "1874771551"
                             ],
                             "VALUE": "Geisterhand"
@@ -3987,15 +3741,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "3735888879",
-                                "3835352456"
-                            ],
-                            "VALUE": "Knochenturm"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "3735888879",
                                 "3835352456"
                             ],
                             "VALUE": "Knochenturm"
@@ -4062,15 +3810,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "3735888875",
-                                "0831150422"
-                            ],
-                            "VALUE": "Kampfbefehl"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "3735888875",
                                 "0831150422"
                             ],
                             "VALUE": "Kampfbefehl"
@@ -4137,16 +3879,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "3735888874",
-                                "3730790865",
-                                "1677435587"
-                            ],
-                            "VALUE": "Geistform"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "3735888874",
                                 "3730790865",
                                 "1677435587"
                             ],
@@ -4224,15 +3959,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "3735888877",
-                                "0140487581"
-                            ],
-                            "VALUE": "Geisterhafte Kohorte"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "3735888877",
                                 "0140487581"
                             ],
                             "VALUE": "Geisterhafte Kohorte"
@@ -4375,15 +4104,9 @@
                 },
                 "SPELLS": [
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "3735927181",
-                                "1805538803"
-                            ],
-                            "VALUE": "Hinrichtung"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "3735927181",
                                 "1805538803"
                             ],
                             "VALUE": "Hinrichtung"
@@ -4450,15 +4173,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "3735927184",
-                                "1911390387"
-                            ],
-                            "VALUE": "Verst\u00fcmmelung"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "3735927184",
                                 "1911390387"
                             ],
                             "VALUE": "Verst\u00fcmmelung"
@@ -4525,15 +4242,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "3735927180",
-                                "3096225103"
-                            ],
-                            "VALUE": "Pranger"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "3735927180",
                                 "3096225103"
                             ],
                             "VALUE": "Pranger"
@@ -4600,15 +4311,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "3735927183",
-                                "0725117723"
-                            ],
-                            "VALUE": "Eifer"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "3735927183",
                                 "0725117723"
                             ],
                             "VALUE": "Eifer"
@@ -4675,15 +4380,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "3735927182",
-                                "2816251291"
-                            ],
-                            "VALUE": "Kasteiung"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "3735927182",
                                 "2816251291"
                             ],
                             "VALUE": "Kasteiung"
@@ -4872,15 +4571,9 @@
                 },
                 "SPELLS": [
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "3735927189",
-                                "4127901963"
-                            ],
-                            "VALUE": "F\u00e4cherblitz"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "3735927189",
                                 "4127901963"
                             ],
                             "VALUE": "F\u00e4cherblitz"
@@ -4947,15 +4640,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "3735927185",
-                                "0379618462"
-                            ],
-                            "VALUE": "Machtsog"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "3735927185",
                                 "0379618462"
                             ],
                             "VALUE": "Machtsog"
@@ -5022,15 +4709,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "3735927188",
-                                "3605158913"
-                            ],
-                            "VALUE": "Machtsto\u00df"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "3735927188",
                                 "3605158913"
                             ],
                             "VALUE": "Machtsto\u00df"
@@ -5097,16 +4778,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "3735927187",
-                                "2752705749",
-                                "4111826567"
-                            ],
-                            "VALUE": "Doppelg\u00e4nger"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "3735927187",
                                 "2752705749",
                                 "4111826567"
                             ],
@@ -5184,15 +4858,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "3735927186",
-                                "0476544923"
-                            ],
-                            "VALUE": "Vergeltung"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "3735927186",
                                 "0476544923"
                             ],
                             "VALUE": "Vergeltung"
@@ -5381,15 +5049,9 @@
                 },
                 "SPELLS": [
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "3735927294",
-                                "2101263419"
-                            ],
-                            "VALUE": "Seelenraub"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "3735927294",
                                 "2101263419"
                             ],
                             "VALUE": "Seelenraub"
@@ -5456,15 +5118,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "3735927295",
-                                "2855719397"
-                            ],
-                            "VALUE": "Entsetzen"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "3735927295",
                                 "2855719397"
                             ],
                             "VALUE": "Entsetzen"
@@ -5531,15 +5187,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "3735927293",
-                                "2379481693"
-                            ],
-                            "VALUE": "Versklavung"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "3735927293",
                                 "2379481693"
                             ],
                             "VALUE": "Versklavung"
@@ -5606,15 +5256,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "3735927296",
-                                "2737697397"
-                            ],
-                            "VALUE": "Sch\u00e4ndung"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "3735927296",
                                 "2737697397"
                             ],
                             "VALUE": "Sch\u00e4ndung"
@@ -5681,15 +5325,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "3735927297",
-                                "4292543913"
-                            ],
-                            "VALUE": "Seelenf\u00e4nger"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "3735927297",
                                 "4292543913"
                             ],
                             "VALUE": "Seelenf\u00e4nger"
@@ -5894,15 +5532,9 @@
                 },
                 "SPELLS": [
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "3735927298",
-                                "1538362104"
-                            ],
-                            "VALUE": "Feuerball"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "3735927298",
                                 "1538362104"
                             ],
                             "VALUE": "Feuerball"
@@ -5969,15 +5601,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "3735927299",
-                                "2831344936"
-                            ],
-                            "VALUE": "Feuersturm"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "3735927299",
                                 "2831344936"
                             ],
                             "VALUE": "Feuersturm"
@@ -6044,15 +5670,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "3735927300",
-                                "3109340658"
-                            ],
-                            "VALUE": "Meteor"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "3735927300",
                                 "3109340658"
                             ],
                             "VALUE": "Meteor"
@@ -6119,15 +5739,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "3735927301",
-                                "0124618721"
-                            ],
-                            "VALUE": "Feuerd\u00e4mon"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "3735927301",
                                 "0124618721"
                             ],
                             "VALUE": "Feuerd\u00e4mon"
@@ -6194,15 +5808,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "3735927302",
-                                "3044464687"
-                            ],
-                            "VALUE": "Feuerhaut"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "3735927302",
                                 "3044464687"
                             ],
                             "VALUE": "Feuerhaut"
@@ -6391,15 +5999,9 @@
                 },
                 "SPELLS": [
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "3735927410",
-                                "1523208678"
-                            ],
-                            "VALUE": "Frostschlag"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "3735927410",
                                 "1523208678"
                             ],
                             "VALUE": "Frostschlag"
@@ -6466,15 +6068,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "3735927409",
-                                "2117555422"
-                            ],
-                            "VALUE": "Eissplitter"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "3735927409",
                                 "2117555422"
                             ],
                             "VALUE": "Eissplitter"
@@ -6541,15 +6137,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "3735927406",
-                                "1734545207"
-                            ],
-                            "VALUE": "Schneesturm"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "3735927406",
                                 "1734545207"
                             ],
                             "VALUE": "Schneesturm"
@@ -6616,15 +6206,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "3735927407",
-                                "0878559408"
-                            ],
-                            "VALUE": "Nebelform"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "3735927407",
                                 "0878559408"
                             ],
                             "VALUE": "Nebelform"
@@ -6691,15 +6275,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "3735927413",
-                                "1322315294"
-                            ],
-                            "VALUE": "Kristallhaut"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "3735927413",
                                 "1322315294"
                             ],
                             "VALUE": "Kristallhaut"
@@ -6888,15 +6466,9 @@
                 },
                 "SPELLS": [
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "3735927414",
-                                "2042441062"
-                            ],
-                            "VALUE": "Energieblitz"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "3735927414",
                                 "2042441062"
                             ],
                             "VALUE": "Energieblitz"
@@ -6963,15 +6535,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "3735927412",
-                                "4286824759"
-                            ],
-                            "VALUE": "Magischer Schlag"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "3735927412",
                                 "4286824759"
                             ],
                             "VALUE": "Magischer Schlag"
@@ -7038,15 +6604,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "3735927408",
-                                "0141610593"
-                            ],
-                            "VALUE": "Teleport"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "3735927408",
                                 "0141610593"
                             ],
                             "VALUE": "Teleport"
@@ -7113,15 +6673,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "3735927415",
-                                "3099025487"
-                            ],
-                            "VALUE": "Bannkreis"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "3735927415",
                                 "3099025487"
                             ],
                             "VALUE": "Bannkreis"
@@ -7188,15 +6742,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "3735927411",
-                                "2412239264"
-                            ],
-                            "VALUE": "Regenerationskraft"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "3735927411",
                                 "2412239264"
                             ],
                             "VALUE": "Regenerationskraft"
@@ -7345,15 +6893,9 @@
                 },
                 "SPELLS": [
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1242927860",
-                                "2240954442"
-                            ],
-                            "VALUE": "Sch\u00f6pfungsschlag"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1242927860",
                                 "2240954442"
                             ],
                             "VALUE": "Sch\u00f6pfungsschlag"
@@ -7420,15 +6962,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1242927858",
-                                "4140192754"
-                            ],
-                            "VALUE": "Kampfarm"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1242927858",
                                 "4140192754"
                             ],
                             "VALUE": "Kampfarm"
@@ -7495,15 +7031,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1242927862",
-                                "2864700878"
-                            ],
-                            "VALUE": "Todesspie\u00dfe"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1242927862",
                                 "2864700878"
                             ],
                             "VALUE": "Todesspie\u00dfe"
@@ -7570,16 +7100,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1242927859",
-                                "0817338779",
-                                "4099002477"
-                            ],
-                            "VALUE": "Kampfaura"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1242927859",
                                 "0817338779",
                                 "4099002477"
                             ],
@@ -7657,15 +7180,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1242927861",
-                                "2216056077"
-                            ],
-                            "VALUE": "T-Kampfschild"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1242927861",
                                 "2216056077"
                             ],
                             "VALUE": "T-Kampfschild"
@@ -7854,15 +7371,9 @@
                 },
                 "SPELLS": [
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1242927973",
-                                "0735094634"
-                            ],
-                            "VALUE": "Projektil"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1242927973",
                                 "0735094634"
                             ],
                             "VALUE": "Projektil"
@@ -7929,15 +7440,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1242927972",
-                                "1615878353"
-                            ],
-                            "VALUE": "Flammenwerfer"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1242927972",
                                 "1615878353"
                             ],
                             "VALUE": "Flammenwerfer"
@@ -8004,15 +7509,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1242927974",
-                                "2033401045"
-                            ],
-                            "VALUE": "T-Schock"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1242927974",
                                 "2033401045"
                             ],
                             "VALUE": "T-Schock"
@@ -8079,15 +7578,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1242927971",
-                                "3401957389"
-                            ],
-                            "VALUE": "Archimedes-Strahl"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1242927971",
                                 "3401957389"
                             ],
                             "VALUE": "Archimedes-Strahl"
@@ -8154,15 +7647,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1242966509",
-                                "1571957661"
-                            ],
-                            "VALUE": "Levitieren"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1242966509",
                                 "1571957661"
                             ],
                             "VALUE": "Levitieren"
@@ -8351,15 +7838,9 @@
                 },
                 "SPELLS": [
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1242927969",
-                                "2173578505"
-                            ],
-                            "VALUE": "Mutieren"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1242927969",
                                 "2173578505"
                             ],
                             "VALUE": "Mutieren"
@@ -8426,15 +7907,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1242927968",
-                                "2630277520"
-                            ],
-                            "VALUE": "Gluthitze"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1242927968",
                                 "2630277520"
                             ],
                             "VALUE": "Gluthitze"
@@ -8501,15 +7976,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1242927863",
-                                "1272019359"
-                            ],
-                            "VALUE": "Eisesk\u00e4lte"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1242927863",
                                 "1272019359"
                             ],
                             "VALUE": "Eisesk\u00e4lte"
@@ -8576,15 +8045,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1242927864",
-                                "3349011504"
-                            ],
-                            "VALUE": "Energienetz"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1242927864",
                                 "3349011504"
                             ],
                             "VALUE": "Energienetz"
@@ -8651,15 +8114,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1242927970",
-                                "2837155124"
-                            ],
-                            "VALUE": "Schockpulse"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1242927970",
                                 "2837155124"
                             ],
                             "VALUE": "Schockpulse"
@@ -8864,15 +8321,9 @@
                 },
                 "SPELLS": [
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1245775003",
-                                "3705838349"
-                            ],
-                            "VALUE": "Berserkerform"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1245775003",
                                 "3705838349"
                             ],
                             "VALUE": "Berserkerform"
@@ -8939,15 +8390,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1245774899",
-                                "0482733901"
-                            ],
-                            "VALUE": "Drachenform"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1245774899",
                                 "0482733901"
                             ],
                             "VALUE": "Drachenform"
@@ -9014,15 +8459,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1245775005",
-                                "3123728555"
-                            ],
-                            "VALUE": "Drachenschlag"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1245775005",
                                 "3123728555"
                             ],
                             "VALUE": "Drachenschlag"
@@ -9089,15 +8528,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1245775004",
-                                "2219550735"
-                            ],
-                            "VALUE": "Ewiges Feuer"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1245775004",
                                 "2219550735"
                             ],
                             "VALUE": "Ewiges Feuer"
@@ -9164,15 +8597,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1245775006",
-                                "3574625864"
-                            ],
-                            "VALUE": "Vertrauter"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1245775006",
                                 "3574625864"
                             ],
                             "VALUE": "Vertrauter"
@@ -9361,15 +8788,9 @@
                 },
                 "SPELLS": [
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1245775010",
-                                "1144960842"
-                            ],
-                            "VALUE": "Zerst\u00f6rer"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1245775010",
                                 "1144960842"
                             ],
                             "VALUE": "Zerst\u00f6rer"
@@ -9436,15 +8857,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1245775008",
-                                "0731959971"
-                            ],
-                            "VALUE": "Windsto\u00df"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1245775008",
                                 "0731959971"
                             ],
                             "VALUE": "Windsto\u00df"
@@ -9511,15 +8926,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1245775009",
-                                "0264132184"
-                            ],
-                            "VALUE": "Magischer Wall"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1245775009",
                                 "0264132184"
                             ],
                             "VALUE": "Magischer Wall"
@@ -9586,15 +8995,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1245775007",
-                                "1836822460"
-                            ],
-                            "VALUE": "Wirbelwind"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1245775007",
                                 "1836822460"
                             ],
                             "VALUE": "Wirbelwind"
@@ -9661,15 +9064,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1245775011",
-                                "1969633817"
-                            ],
-                            "VALUE": "Besch\u00fctzer"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1245775011",
                                 "1969633817"
                             ],
                             "VALUE": "Besch\u00fctzer"
@@ -9858,15 +9255,9 @@
                 },
                 "SPELLS": [
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1245775012",
-                                "0265807460"
-                            ],
-                            "VALUE": "Gedankenschlag"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1245775012",
                                 "0265807460"
                             ],
                             "VALUE": "Gedankenschlag"
@@ -9933,15 +9324,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1245775116",
-                                "0366245707"
-                            ],
-                            "VALUE": "Energiebrand"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1245775116",
                                 "0366245707"
                             ],
                             "VALUE": "Energiebrand"
@@ -10008,15 +9393,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1245775117",
-                                "0363547324"
-                            ],
-                            "VALUE": "Mahlstrom"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1245775117",
                                 "0363547324"
                             ],
                             "VALUE": "Mahlstrom"
@@ -10083,15 +9462,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1245775118",
-                                "2072710481"
-                            ],
-                            "VALUE": "Kampftrance"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1245775118",
                                 "2072710481"
                             ],
                             "VALUE": "Kampftrance"
@@ -10158,15 +9531,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1245775119",
-                                "1732477614"
-                            ],
-                            "VALUE": "Schutzrunen"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1245775119",
                                 "1732477614"
                             ],
                             "VALUE": "Schutzrunen"

@@ -308,14 +308,14 @@ def getAspectCategoryHashMap(aspect: str) -> dict[str, list[str]]:
     categoryHashMap = insertIntoMap(categoryHashMap, "ASPECTNAME", aspectnamelist)
 
     # SKILL ASPECT LORE
-    if (not (aspect in hasNoLoreAspects)):
-        for syntaxItem in loreSyntaxes.items():
-            syntaxCategory = syntaxItem[0]
-            syntaxList = syntaxItem[1]
-            hashList = []
-            for syntax in syntaxList:
-                hashList.append(h.hashgen(syntax.replace("#ASPECT", aspect)))
-            categoryHashMap = insertIntoMap(categoryHashMap, syntaxCategory, hashList)
+    #if (not (aspect in hasNoLoreAspects)):
+    for syntaxItem in loreSyntaxes.items():
+        syntaxCategory = syntaxItem[0]
+        syntaxList = syntaxItem[1]
+        hashList = []
+        for syntax in syntaxList:
+            hashList.append(h.hashgen(syntax.replace("#ASPECT", aspect)))
+        categoryHashMap = insertIntoMap(categoryHashMap, syntaxCategory, hashList)
 
     # SKILL ASPECT FOCUS
     for syntaxItem in focusSyntaxes.items():
@@ -334,14 +334,20 @@ def getAspectCategoryHashMap(aspect: str) -> dict[str, list[str]]:
 
 def getHeroCategoryHashMap(hero: str) -> dict[str, list[str]]:
     categoryHashMap = {}
-    if hero != "INQUISITOR":
-        descList = []
-        descList.append(h.hashgen("UI_TT_ATMO_" + hero + "_GOOD"))
-        categoryHashMap = insertIntoMap(categoryHashMap, "DESC_GOOD", descList)
-    if hero != "SERAPHIM":
-        descList = []
-        descList.append(h.hashgen("UI_TT_ATMO_" + hero + "_BAD"))
-        categoryHashMap = insertIntoMap(categoryHashMap, "DESC_BAD", descList)
+    descList = []
+    descList.append(h.hashgen("UI_TT_ATMO_" + hero + "_GOOD"))
+    categoryHashMap = insertIntoMap(categoryHashMap, "DESC_GOOD", descList)
+    descList.clear()
+    descList.append(h.hashgen("UI_TT_ATMO_" + hero + "_BAD"))
+    categoryHashMap = insertIntoMap(categoryHashMap, "DESC_BAD", descList)
+    #if hero != "INQUISITOR":
+    #    descList = []
+    #    descList.append(h.hashgen("UI_TT_ATMO_" + hero + "_GOOD"))
+    #    categoryHashMap = insertIntoMap(categoryHashMap, "DESC_GOOD", descList)
+    #if hero != "SERAPHIM":
+    #    descList = []
+    #    descList.append(h.hashgen("UI_TT_ATMO_" + hero + "_BAD"))
+    #    categoryHashMap = insertIntoMap(categoryHashMap, "DESC_BAD", descList)
     
     return categoryHashMap
 

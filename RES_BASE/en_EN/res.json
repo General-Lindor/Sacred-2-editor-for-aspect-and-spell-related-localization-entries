@@ -2,9 +2,15 @@
     "SERAPHIM": {
         "DESC_GOOD": {
             "HASHES": [
-                "0278336949"
+                "2891048291"
             ],
             "VALUE": "<AlignH Value=Center/>Character: <i>Seraphim</i><br>Orientation: Melee / Holy Magic<br>Aspects: Exalted Warrior, Celestial Magic, Revered Technology<br><br>I am one of the Seraphim, the ethereal beings who have been watching over the fate of the world since the beginning of time. United as sisters under the watchful eye of Sophia we were committed to our duty and proud to serve.<br><br>Yet the creator has left this world. Thus we are patiently waiting for the day when he will finally return, the day when our duty will be fulfilled."
+        },
+        "DESC_BAD": {
+            "HASHES": [
+                "2891048291"
+            ],
+            "VALUE": ""
         },
         "ASPECTS": [
             {
@@ -13,6 +19,62 @@
                         "1332499538"
                     ],
                     "VALUE": "Exalted Warrior"
+                },
+                "LORE_NAME": {
+                    "HASHES": [
+                        "3251345728",
+                        "4149018914"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_DESCRIPTION": {
+                    "HASHES": [
+                        "3232830688"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_MASTERY_NAME": {
+                    "HASHES": [
+                        "0134636164",
+                        "3102386278"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_MASTERY_ATMO_SHORT": {
+                    "HASHES": [
+                        "1618182691"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_MASTERY_ATMO_LONG": {
+                    "HASHES": [
+                        "1866728627"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_PROPERTIES_1": {
+                    "HASHES": [
+                        "0358066924"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_PROPERTIES_2": {
+                    "HASHES": [
+                        "0358066925"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_PROPERTIES_3": {
+                    "HASHES": [
+                        "0358066926"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_PROPERTIES_MASTERY": {
+                    "HASHES": [
+                        "0738858192"
+                    ],
+                    "VALUE": ""
                 },
                 "FOCUS_NAME": {
                     "HASHES": [
@@ -72,15 +134,9 @@
                 },
                 "SPELLS": [
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1242927181",
-                                "1271494322"
-                            ],
-                            "VALUE": "Soul Hammer"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1242927181",
                                 "1271494322"
                             ],
                             "VALUE": "Soul Hammer"
@@ -147,15 +203,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1242927180",
-                                "3591750607"
-                            ],
-                            "VALUE": "Pelting Strikes"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1242927180",
                                 "3591750607"
                             ],
                             "VALUE": "Pelting Strikes"
@@ -222,15 +272,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1242927182",
-                                "3103047680"
-                            ],
-                            "VALUE": "Assailing Somersault"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1242927182",
                                 "3103047680"
                             ],
                             "VALUE": "Assailing Somersault"
@@ -297,15 +341,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1242927178",
-                                "2460868597"
-                            ],
-                            "VALUE": "Dashing Alacrity"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1242927178",
                                 "2460868597"
                             ],
                             "VALUE": "Dashing Alacrity"
@@ -372,15 +410,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1242927179",
-                                "0779594718"
-                            ],
-                            "VALUE": "Battle Stance"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1242927179",
                                 "0779594718"
                             ],
                             "VALUE": "Battle Stance"
@@ -569,15 +601,9 @@
                 },
                 "SPELLS": [
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1242915432",
-                                "1385197087"
-                            ],
-                            "VALUE": "Baneful Smite"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1242915432",
                                 "1385197087"
                             ],
                             "VALUE": "Baneful Smite"
@@ -644,15 +670,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1242927177",
-                                "3668446653"
-                            ],
-                            "VALUE": "Radiant Pillar"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1242927177",
                                 "3668446653"
                             ],
                             "VALUE": "Radiant Pillar"
@@ -719,15 +739,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1242915431",
-                                "4245061941"
-                            ],
-                            "VALUE": "Instill Belief"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1242915431",
                                 "4245061941"
                             ],
                             "VALUE": "Instill Belief"
@@ -794,15 +808,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1242915433",
-                                "4260234127"
-                            ],
-                            "VALUE": "Hallowed Restoration"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1242915433",
                                 "4260234127"
                             ],
                             "VALUE": "Hallowed Restoration"
@@ -869,15 +877,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1242915434",
-                                "2032479703"
-                            ],
-                            "VALUE": "Cleansing Brilliance"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1242915434",
                                 "2032479703"
                             ],
                             "VALUE": "Cleansing Brilliance"
@@ -1066,15 +1068,9 @@
                 },
                 "SPELLS": [
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1242927290",
-                                "2399555370"
-                            ],
-                            "VALUE": "Archangel's Wrath"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1242927290",
                                 "2399555370"
                             ],
                             "VALUE": "Archangel's Wrath"
@@ -1141,15 +1137,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1242927186",
-                                "2747637447"
-                            ],
-                            "VALUE": "Flaring Nova"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1242927186",
                                 "2747637447"
                             ],
                             "VALUE": "Flaring Nova"
@@ -1216,15 +1206,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1242927185",
-                                "1330121435"
-                            ],
-                            "VALUE": "Divine Protection"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1242927185",
                                 "1330121435"
                             ],
                             "VALUE": "Divine Protection"
@@ -1291,15 +1275,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1242927184",
-                                "1077800425"
-                            ],
-                            "VALUE": "Warding Energy"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1242927184",
                                 "1077800425"
                             ],
                             "VALUE": "Warding Energy"
@@ -1366,15 +1344,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1242927183",
-                                "1205840625"
-                            ],
-                            "VALUE": "BeeEffGee"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1242927183",
                                 "1205840625"
                             ],
                             "VALUE": "BeeEffGee"
@@ -1447,7 +1419,7 @@
     "DRYADE": {
         "DESC_GOOD": {
             "HASHES": [
-                "3157784037"
+                "0598007955"
             ],
             "VALUE": "<AlignH Value=Center/>Character: <i>Dryad</i><br>Orientation: Ranged Combat / Magic<br>Aspects: Capricious Hunter, Cabalistic Voodoo, Nature Weaver<br><br>I'm from the deep woods. My heart beats in tune with nature and my soul draws its power from the mystical force of the trees.<br>But the world's destiny forced me to leave my home and fight to prevent nature's destruction. I spare no pains for this aim."
         },
@@ -1464,6 +1436,62 @@
                         "0335802969"
                     ],
                     "VALUE": "Capricious Hunter"
+                },
+                "LORE_NAME": {
+                    "HASHES": [
+                        "0167780999",
+                        "3006793449"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_DESCRIPTION": {
+                    "HASHES": [
+                        "0149265959"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_MASTERY_NAME": {
+                    "HASHES": [
+                        "3287377995",
+                        "0733866669"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_MASTERY_ATMO_SHORT": {
+                    "HASHES": [
+                        "0072764234"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_MASTERY_ATMO_LONG": {
+                    "HASHES": [
+                        "3069326282"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_PROPERTIES_1": {
+                    "HASHES": [
+                        "3510808755"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_PROPERTIES_2": {
+                    "HASHES": [
+                        "3510808756"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_PROPERTIES_3": {
+                    "HASHES": [
+                        "3510808757"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_PROPERTIES_MASTERY": {
+                    "HASHES": [
+                        "3488407031"
+                    ],
+                    "VALUE": ""
                 },
                 "FOCUS_NAME": {
                     "HASHES": [
@@ -1523,15 +1551,9 @@
                 },
                 "SPELLS": [
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1242927976",
-                                "1004300792"
-                            ],
-                            "VALUE": "Ravaged Impact"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1242927976",
                                 "1004300792"
                             ],
                             "VALUE": "Ravaged Impact"
@@ -1598,15 +1620,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1242927975",
-                                "2131877725"
-                            ],
-                            "VALUE": "Darting Assault"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1242927975",
                                 "2131877725"
                             ],
                             "VALUE": "Darting Assault"
@@ -1673,15 +1689,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1242928081",
-                                "3143830277"
-                            ],
-                            "VALUE": "Forest Flight"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1242928081",
                                 "3143830277"
                             ],
                             "VALUE": "Forest Flight"
@@ -1748,15 +1758,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1242928082",
-                                "3693402776"
-                            ],
-                            "VALUE": "Dust Devil"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1242928082",
                                 "3693402776"
                             ],
                             "VALUE": "Dust Devil"
@@ -1823,15 +1827,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1242927977",
-                                "3456539825"
-                            ],
-                            "VALUE": "Sinister Predator"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1242927977",
                                 "3456539825"
                             ],
                             "VALUE": "Sinister Predator"
@@ -2020,15 +2018,9 @@
                 },
                 "SPELLS": [
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1242928089",
-                                "0689156728"
-                            ],
-                            "VALUE": "Twisted Torment"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1242928089",
                                 "0689156728"
                             ],
                             "VALUE": "Twisted Torment"
@@ -2095,15 +2087,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1242928084",
-                                "2878938862"
-                            ],
-                            "VALUE": "Viperish Disease"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1242928084",
                                 "2878938862"
                             ],
                             "VALUE": "Viperish Disease"
@@ -2170,15 +2156,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1242928194",
-                                "1350937935"
-                            ],
-                            "VALUE": "Black Curse"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1242928194",
                                 "1350937935"
                             ],
                             "VALUE": "Black Curse"
@@ -2245,15 +2225,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1242928090",
-                                "2365072390"
-                            ],
-                            "VALUE": "Malicious Totem"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1242928090",
                                 "2365072390"
                             ],
                             "VALUE": "Malicious Totem"
@@ -2320,15 +2294,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1242928195",
-                                "3932000227"
-                            ],
-                            "VALUE": "Moribund Animus"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1242928195",
                                 "3932000227"
                             ],
                             "VALUE": "Moribund Animus"
@@ -2517,15 +2485,9 @@
                 },
                 "SPELLS": [
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1242928083",
-                                "0621065911"
-                            ],
-                            "VALUE": "Edaphic Lances"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1242928083",
                                 "0621065911"
                             ],
                             "VALUE": "Edaphic Lances"
@@ -2592,15 +2554,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1242928088",
-                                "3225040266"
-                            ],
-                            "VALUE": "Tangled Vine"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1242928088",
                                 "3225040266"
                             ],
                             "VALUE": "Tangled Vine"
@@ -2667,15 +2623,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1242928085",
-                                "1135937509"
-                            ],
-                            "VALUE": "Goldenglade Touch"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1242928085",
                                 "1135937509"
                             ],
                             "VALUE": "Goldenglade Touch"
@@ -2742,15 +2692,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1242928087",
-                                "2898930036"
-                            ],
-                            "VALUE": "Acute Mind"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1242928087",
                                 "2898930036"
                             ],
                             "VALUE": "Acute Mind"
@@ -2817,15 +2761,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1242928086",
-                                "2717410917"
-                            ],
-                            "VALUE": "Ancient Bark"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1242928086",
                                 "2717410917"
                             ],
                             "VALUE": "Ancient Bark"
@@ -2898,7 +2836,7 @@
     "SCHATTENKRIEGER": {
         "DESC_GOOD": {
             "HASHES": [
-                "2237981759"
+                "4124664205"
             ],
             "VALUE": "<AlignH Value=Center/>Character: <i>Shadow Warrior</i><br>Orientation: Melee<br>Aspects: Death Warrior, Malevolent Champion, Astral Lord<br><br>Once I was a soldier. I proved myself in many battles. I never failed and I never avoided a fight. My enemies feared me and I was respected long after I was gone. But I was betrayed. An unnatural force robbed me of my final dues, the peace I had earned and brought my body back into this world.<br><br>This is how I was damned to continue my existence as a creature of the shadows. And so I set out on my way in faith and honor hoping that one day my path might lead me to eternal peace..."
         },
@@ -2915,6 +2853,62 @@
                         "1011308535"
                     ],
                     "VALUE": "Death Warrior"
+                },
+                "LORE_NAME": {
+                    "HASHES": [
+                        "0817125955",
+                        "3270041765"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_DESCRIPTION": {
+                    "HASHES": [
+                        "0798610915"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_MASTERY_NAME": {
+                    "HASHES": [
+                        "3550626311",
+                        "0165308009"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_MASTERY_ATMO_SHORT": {
+                    "HASHES": [
+                        "4026955398"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_MASTERY_ATMO_LONG": {
+                    "HASHES": [
+                        "3598430406"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_PROPERTIES_1": {
+                    "HASHES": [
+                        "3774057071"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_PROPERTIES_2": {
+                    "HASHES": [
+                        "3774057072"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_PROPERTIES_3": {
+                    "HASHES": [
+                        "3774057073"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_PROPERTIES_MASTERY": {
+                    "HASHES": [
+                        "3147630899"
+                    ],
+                    "VALUE": ""
                 },
                 "FOCUS_NAME": {
                     "HASHES": [
@@ -2974,15 +2968,9 @@
                 },
                 "SPELLS": [
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "3735888881",
-                                "3176522979"
-                            ],
-                            "VALUE": "Demonic Blow"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "3735888881",
                                 "3176522979"
                             ],
                             "VALUE": "Demonic Blow"
@@ -3049,15 +3037,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "3735888880",
-                                "2401696647"
-                            ],
-                            "VALUE": "Scything Sweep"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "3735888880",
                                 "2401696647"
                             ],
                             "VALUE": "Scything Sweep"
@@ -3124,15 +3106,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "3735888986",
-                                "2663466740"
-                            ],
-                            "VALUE": "Ruinous Onslaught"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "3735888986",
                                 "2663466740"
                             ],
                             "VALUE": "Ruinous Onslaught"
@@ -3199,15 +3175,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "3735888882",
-                                "2243878983"
-                            ],
-                            "VALUE": "Rousing Command"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "3735888882",
                                 "2243878983"
                             ],
                             "VALUE": "Rousing Command"
@@ -3274,15 +3244,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "3735888987",
-                                "1935059016"
-                            ],
-                            "VALUE": "Grim Resilience"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "3735888987",
                                 "1935059016"
                             ],
                             "VALUE": "Grim Resilience"
@@ -3357,6 +3321,62 @@
                     ],
                     "VALUE": "Malevolent Champion"
                 },
+                "LORE_NAME": {
+                    "HASHES": [
+                        "2301795067",
+                        "2471478621"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_DESCRIPTION": {
+                    "HASHES": [
+                        "2283280027"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_MASTERY_NAME": {
+                    "HASHES": [
+                        "2752063167",
+                        "3109547809"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_MASTERY_ATMO_SHORT": {
+                    "HASHES": [
+                        "2099512894"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_MASTERY_ATMO_LONG": {
+                    "HASHES": [
+                        "2859210750"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_PROPERTIES_1": {
+                    "HASHES": [
+                        "2975493927"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_PROPERTIES_2": {
+                    "HASHES": [
+                        "2975493928"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_PROPERTIES_3": {
+                    "HASHES": [
+                        "2975493929"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_PROPERTIES_MASTERY": {
+                    "HASHES": [
+                        "1220188395"
+                    ],
+                    "VALUE": ""
+                },
                 "FOCUS_NAME": {
                     "HASHES": [
                         "3136364825",
@@ -3415,15 +3435,9 @@
                 },
                 "SPELLS": [
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "3735864129",
-                                "1933963364"
-                            ],
-                            "VALUE": "Frenzied Rampage"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "3735864129",
                                 "1933963364"
                             ],
                             "VALUE": "Frenzied Rampage"
@@ -3490,15 +3504,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "3735901758",
-                                "2242288422"
-                            ],
-                            "VALUE": "Belligerent Vault"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "3735901758",
                                 "2242288422"
                             ],
                             "VALUE": "Belligerent Vault"
@@ -3565,15 +3573,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "3735901759",
-                                "2674711949"
-                            ],
-                            "VALUE": "Augmenting Guidon"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "3735901759",
                                 "2674711949"
                             ],
                             "VALUE": "Augmenting Guidon"
@@ -3640,15 +3642,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "3735901757",
-                                "2542409772"
-                            ],
-                            "VALUE": "Killing Spree"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "3735901757",
                                 "2542409772"
                             ],
                             "VALUE": "Killing Spree"
@@ -3715,15 +3711,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "3735888876",
-                                "1845541117"
-                            ],
-                            "VALUE": "Reflective Emanation"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "3735888876",
                                 "1845541117"
                             ],
                             "VALUE": "Reflective Emanation"
@@ -3912,15 +3902,9 @@
                 },
                 "SPELLS": [
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "3735877130",
-                                "1874771551"
-                            ],
-                            "VALUE": "Spectral Hand"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "3735877130",
                                 "1874771551"
                             ],
                             "VALUE": "Spectral Hand"
@@ -3987,15 +3971,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "3735888879",
-                                "3835352456"
-                            ],
-                            "VALUE": "Skeletal Fortification"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "3735888879",
                                 "3835352456"
                             ],
                             "VALUE": "Skeletal Fortification"
@@ -4062,15 +4040,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "3735888875",
-                                "0831150422"
-                            ],
-                            "VALUE": "Rallied Souls"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "3735888875",
                                 "0831150422"
                             ],
                             "VALUE": "Rallied Souls"
@@ -4137,16 +4109,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "3735888874",
-                                "3730790865",
-                                "1677435587"
-                            ],
-                            "VALUE": "Shadow Veil"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "3735888874",
                                 "3730790865",
                                 "1677435587"
                             ],
@@ -4224,15 +4189,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "3735888877",
-                                "0140487581"
-                            ],
-                            "VALUE": "Nether Allegiance"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "3735888877",
                                 "0140487581"
                             ],
                             "VALUE": "Nether Allegiance"
@@ -4303,6 +4262,12 @@
         ]
     },
     "INQUISITOR": {
+        "DESC_GOOD": {
+            "HASHES": [
+                "1016540465"
+            ],
+            "VALUE": ""
+        },
         "DESC_BAD": {
             "HASHES": [
                 "1016540465"
@@ -4316,6 +4281,62 @@
                         "2558893431"
                     ],
                     "VALUE": "Gruesome Inquisition"
+                },
+                "LORE_NAME": {
+                    "HASHES": [
+                        "2168767669",
+                        "1269682711"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_DESCRIPTION": {
+                    "HASHES": [
+                        "2150252629"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_MASTERY_NAME": {
+                    "HASHES": [
+                        "1550267257",
+                        "1135632091"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_MASTERY_ATMO_SHORT": {
+                    "HASHES": [
+                        "2295791928"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_MASTERY_ATMO_LONG": {
+                    "HASHES": [
+                        "3773153176"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_PROPERTIES_1": {
+                    "HASHES": [
+                        "1773698017"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_PROPERTIES_2": {
+                    "HASHES": [
+                        "1773698018"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_PROPERTIES_3": {
+                    "HASHES": [
+                        "1773698019"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_PROPERTIES_MASTERY": {
+                    "HASHES": [
+                        "1416467429"
+                    ],
+                    "VALUE": ""
                 },
                 "FOCUS_NAME": {
                     "HASHES": [
@@ -4375,15 +4396,9 @@
                 },
                 "SPELLS": [
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "3735927181",
-                                "1805538803"
-                            ],
-                            "VALUE": "Callous Execution"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "3735927181",
                                 "1805538803"
                             ],
                             "VALUE": "Callous Execution"
@@ -4450,15 +4465,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "3735927184",
-                                "1911390387"
-                            ],
-                            "VALUE": "Ruthless Mutilation"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "3735927184",
                                 "1911390387"
                             ],
                             "VALUE": "Ruthless Mutilation"
@@ -4525,15 +4534,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "3735927180",
-                                "3096225103"
-                            ],
-                            "VALUE": "Mortifying Pillory"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "3735927180",
                                 "3096225103"
                             ],
                             "VALUE": "Mortifying Pillory"
@@ -4600,15 +4603,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "3735927183",
-                                "0725117723"
-                            ],
-                            "VALUE": "Frenetic Fervor"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "3735927183",
                                 "0725117723"
                             ],
                             "VALUE": "Frenetic Fervor"
@@ -4675,15 +4672,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "3735927182",
-                                "2816251291"
-                            ],
-                            "VALUE": "Purifying Chastisement"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "3735927182",
                                 "2816251291"
                             ],
                             "VALUE": "Purifying Chastisement"
@@ -4872,15 +4863,9 @@
                 },
                 "SPELLS": [
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "3735927189",
-                                "4127901963"
-                            ],
-                            "VALUE": "Levin Array"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "3735927189",
                                 "4127901963"
                             ],
                             "VALUE": "Levin Array"
@@ -4947,15 +4932,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "3735927185",
-                                "0379618462"
-                            ],
-                            "VALUE": "Clustering Maelstrom"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "3735927185",
                                 "0379618462"
                             ],
                             "VALUE": "Clustering Maelstrom"
@@ -5022,15 +5001,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "3735927188",
-                                "3605158913"
-                            ],
-                            "VALUE": "Raving Thrust"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "3735927188",
                                 "3605158913"
                             ],
                             "VALUE": "Raving Thrust"
@@ -5097,16 +5070,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "3735927187",
-                                "2752705749",
-                                "4111826567"
-                            ],
-                            "VALUE": "Zealous Doppelganger"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "3735927187",
                                 "2752705749",
                                 "4111826567"
                             ],
@@ -5184,15 +5150,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "3735927186",
-                                "0476544923"
-                            ],
-                            "VALUE": "Reverse Polarity"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "3735927186",
                                 "0476544923"
                             ],
                             "VALUE": "Reverse Polarity"
@@ -5381,15 +5341,9 @@
                 },
                 "SPELLS": [
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "3735927294",
-                                "2101263419"
-                            ],
-                            "VALUE": "Dislodged Spirit"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "3735927294",
                                 "2101263419"
                             ],
                             "VALUE": "Dislodged Spirit"
@@ -5456,15 +5410,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "3735927295",
-                                "2855719397"
-                            ],
-                            "VALUE": "Paralyzing Dread"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "3735927295",
                                 "2855719397"
                             ],
                             "VALUE": "Paralyzing Dread"
@@ -5531,15 +5479,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "3735927293",
-                                "2379481693"
-                            ],
-                            "VALUE": "Inexorable Subjugation"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "3735927293",
                                 "2379481693"
                             ],
                             "VALUE": "Inexorable Subjugation"
@@ -5606,15 +5548,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "3735927296",
-                                "2737697397"
-                            ],
-                            "VALUE": "Eruptive Desecration"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "3735927296",
                                 "2737697397"
                             ],
                             "VALUE": "Eruptive Desecration"
@@ -5681,15 +5617,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "3735927297",
-                                "4292543913"
-                            ],
-                            "VALUE": "Soul Reaver"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "3735927297",
                                 "4292543913"
                             ],
                             "VALUE": "Soul Reaver"
@@ -5762,7 +5692,7 @@
     "HOCHELFE": {
         "DESC_GOOD": {
             "HASHES": [
-                "2215288394"
+                "1235812808"
             ],
             "VALUE": "<AlignH Value=Center/>Character: <i>High Elf</i><br>Orientation: Magic<br>Aspect: Arrant Pyromancer, Mystic Stormite, Delphic Arcania<br><br>My studies of magic were long and arduous. Still, they were not in vain. Due to my heritage I have been given access to the most secret archives of Thylysium and thus I was able to perfect my abilities and my knowledge of the arcane sciences.<br><br>Now, after all these years of studying I must prove that my education was fruitful. Ancaria awaits!"
         },
@@ -5894,15 +5824,9 @@
                 },
                 "SPELLS": [
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "3735927298",
-                                "1538362104"
-                            ],
-                            "VALUE": "Ancestral Fireball"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "3735927298",
                                 "1538362104"
                             ],
                             "VALUE": "Ancestral Fireball"
@@ -5969,15 +5893,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "3735927299",
-                                "2831344936"
-                            ],
-                            "VALUE": "Blazing Tempest"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "3735927299",
                                 "2831344936"
                             ],
                             "VALUE": "Blazing Tempest"
@@ -6044,15 +5962,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "3735927300",
-                                "3109340658"
-                            ],
-                            "VALUE": "Incendiary Shower"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "3735927300",
                                 "3109340658"
                             ],
                             "VALUE": "Incendiary Shower"
@@ -6119,15 +6031,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "3735927301",
-                                "0124618721"
-                            ],
-                            "VALUE": "Fire Demon"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "3735927301",
                                 "0124618721"
                             ],
                             "VALUE": "Fire Demon"
@@ -6194,15 +6100,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "3735927302",
-                                "3044464687"
-                            ],
-                            "VALUE": "Incandescent Skin"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "3735927302",
                                 "3044464687"
                             ],
                             "VALUE": "Incandescent Skin"
@@ -6391,15 +6291,9 @@
                 },
                 "SPELLS": [
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "3735927410",
-                                "1523208678"
-                            ],
-                            "VALUE": "Frost Flare"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "3735927410",
                                 "1523208678"
                             ],
                             "VALUE": "Frost Flare"
@@ -6466,15 +6360,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "3735927409",
-                                "2117555422"
-                            ],
-                            "VALUE": "Glacial Thorns"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "3735927409",
                                 "2117555422"
                             ],
                             "VALUE": "Glacial Thorns"
@@ -6541,15 +6429,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "3735927406",
-                                "1734545207"
-                            ],
-                            "VALUE": "Raging Nimbus"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "3735927406",
                                 "1734545207"
                             ],
                             "VALUE": "Raging Nimbus"
@@ -6616,15 +6498,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "3735927407",
-                                "0878559408"
-                            ],
-                            "VALUE": "Cascading Shroud"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "3735927407",
                                 "0878559408"
                             ],
                             "VALUE": "Cascading Shroud"
@@ -6691,15 +6567,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "3735927413",
-                                "1322315294"
-                            ],
-                            "VALUE": "Crystal Skin"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "3735927413",
                                 "1322315294"
                             ],
                             "VALUE": "Crystal Skin"
@@ -6888,15 +6758,9 @@
                 },
                 "SPELLS": [
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "3735927414",
-                                "2042441062"
-                            ],
-                            "VALUE": "Cobalt Strike"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "3735927414",
                                 "2042441062"
                             ],
                             "VALUE": "Cobalt Strike"
@@ -6963,15 +6827,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "3735927412",
-                                "4286824759"
-                            ],
-                            "VALUE": "Magic Coup"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "3735927412",
                                 "4286824759"
                             ],
                             "VALUE": "Magic Coup"
@@ -7038,15 +6896,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "3735927408",
-                                "0141610593"
-                            ],
-                            "VALUE": "Shadow Step"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "3735927408",
                                 "0141610593"
                             ],
                             "VALUE": "Shadow Step"
@@ -7113,15 +6965,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "3735927415",
-                                "3099025487"
-                            ],
-                            "VALUE": "Expulse Magic"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "3735927415",
                                 "3099025487"
                             ],
                             "VALUE": "Expulse Magic"
@@ -7188,15 +7034,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "3735927411",
-                                "2412239264"
-                            ],
-                            "VALUE": "Grand Invigoration"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "3735927411",
                                 "2412239264"
                             ],
                             "VALUE": "Grand Invigoration"
@@ -7269,7 +7109,7 @@
     "TEMPELWACHE": {
         "DESC_GOOD": {
             "HASHES": [
-                "1684884299"
+                "1915273049"
             ],
             "VALUE": "<AlignH Value=Center/>Character: <i>Temple Guardian</i><br>Orientation: Melee and Ranged Combat<br>Aspects: Devout Guardian, Lost Fusion, Source Warden<br><br>Me and my brethren have existed in Ancaria since the beginning of time. Brought into being by the creator of this world, animated through his energy. Our bodies may consist of lifeless materials, but my spirit is alive. Few of us have survived the Great War.<br><br>We may have lost our ways and our task may seem to be unaccomplishable, but I shall not rest until I have fulfilled my destiny."
         },
@@ -7286,6 +7126,62 @@
                         "2122888059"
                     ],
                     "VALUE": "Devout Guardian"
+                },
+                "LORE_NAME": {
+                    "HASHES": [
+                        "3085082681",
+                        "0282946459"
+                    ],
+                    "VALUE": "Devout Guardian Lore"
+                },
+                "LORE_DESCRIPTION": {
+                    "HASHES": [
+                        "3066567641"
+                    ],
+                    "VALUE": "Increases damage, critical hit chance, and execution speed of the Devout Guardian aspect. Enables the use of modifications for this aspect."
+                },
+                "LORE_MASTERY_NAME": {
+                    "HASHES": [
+                        "0563531005",
+                        "2664609375"
+                    ],
+                    "VALUE": "Devout Guardian Proficiency"
+                },
+                "LORE_MASTERY_ATMO_SHORT": {
+                    "HASHES": [
+                        "1078628668"
+                    ],
+                    "VALUE": "Further increases inflicted damage."
+                },
+                "LORE_MASTERY_ATMO_LONG": {
+                    "HASHES": [
+                        "3838398940"
+                    ],
+                    "VALUE": "Significantly increases damage, critical hit chance, and execution speed of the Devout Guardian aspect. Enables the use of modifications for this aspect."
+                },
+                "LORE_PROPERTIES_1": {
+                    "HASHES": [
+                        "0786961765"
+                    ],
+                    "VALUE": "Damage"
+                },
+                "LORE_PROPERTIES_2": {
+                    "HASHES": [
+                        "0786961766"
+                    ],
+                    "VALUE": "Chance for Critical Hit"
+                },
+                "LORE_PROPERTIES_3": {
+                    "HASHES": [
+                        "0786961767"
+                    ],
+                    "VALUE": "Execution Speed"
+                },
+                "LORE_PROPERTIES_MASTERY": {
+                    "HASHES": [
+                        "0199304169"
+                    ],
+                    "VALUE": ""
                 },
                 "FOCUS_NAME": {
                     "HASHES": [
@@ -7345,15 +7241,9 @@
                 },
                 "SPELLS": [
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1242927860",
-                                "2240954442"
-                            ],
-                            "VALUE": "Dedicated Blow"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1242927860",
                                 "2240954442"
                             ],
                             "VALUE": "Dedicated Blow"
@@ -7420,15 +7310,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1242927858",
-                                "4140192754"
-                            ],
-                            "VALUE": "Battle Extension"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1242927858",
                                 "4140192754"
                             ],
                             "VALUE": "Battle Extension"
@@ -7495,15 +7379,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1242927862",
-                                "2864700878"
-                            ],
-                            "VALUE": "Deathly Spears"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1242927862",
                                 "2864700878"
                             ],
                             "VALUE": "Deathly Spears"
@@ -7570,16 +7448,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1242927859",
-                                "0817338779",
-                                "4099002477"
-                            ],
-                            "VALUE": "Combat Alert"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1242927859",
                                 "0817338779",
                                 "4099002477"
                             ],
@@ -7646,7 +7517,7 @@
                                 "0853871965",
                                 "2716691951"
                             ],
-                            "VALUE": "Party Protection - Also affects nearby allies."
+                            "VALUE": "Party Protection - Extends Combat Alert to allies within range."
                         },
                         "MOD3B": {
                             "HASHES": [
@@ -7657,15 +7528,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1242927861",
-                                "2216056077"
-                            ],
-                            "VALUE": "T-Energy Shroud"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1242927861",
                                 "2216056077"
                             ],
                             "VALUE": "T-Energy Shroud"
@@ -7854,15 +7719,9 @@
                 },
                 "SPELLS": [
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1242927973",
-                                "0735094634"
-                            ],
-                            "VALUE": "Amplifying Discharge"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1242927973",
                                 "0735094634"
                             ],
                             "VALUE": "Amplifying Discharge"
@@ -7929,15 +7788,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1242927972",
-                                "1615878353"
-                            ],
-                            "VALUE": "Furious Emblazer"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1242927972",
                                 "1615878353"
                             ],
                             "VALUE": "Furious Emblazer"
@@ -8004,15 +7857,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1242927974",
-                                "2033401045"
-                            ],
-                            "VALUE": "Jolting Touch"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1242927974",
                                 "2033401045"
                             ],
                             "VALUE": "Jolting Touch"
@@ -8079,15 +7926,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1242927971",
-                                "3401957389"
-                            ],
-                            "VALUE": "Archimedes Beam"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1242927971",
                                 "3401957389"
                             ],
                             "VALUE": "Archimedes Beam"
@@ -8154,15 +7995,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1242966509",
-                                "1571957661"
-                            ],
-                            "VALUE": "Propelled Levitation"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1242966509",
                                 "1571957661"
                             ],
                             "VALUE": "Propelled Levitation"
@@ -8351,15 +8186,9 @@
                 },
                 "SPELLS": [
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1242927969",
-                                "2173578505"
-                            ],
-                            "VALUE": "Primal Mutation"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1242927969",
                                 "2173578505"
                             ],
                             "VALUE": "Primal Mutation"
@@ -8426,15 +8255,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1242927968",
-                                "2630277520"
-                            ],
-                            "VALUE": "Fiery Ember"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1242927968",
                                 "2630277520"
                             ],
                             "VALUE": "Fiery Ember"
@@ -8501,15 +8324,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1242927863",
-                                "1272019359"
-                            ],
-                            "VALUE": "Icy Evanescence"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1242927863",
                                 "1272019359"
                             ],
                             "VALUE": "Icy Evanescence"
@@ -8576,15 +8393,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1242927864",
-                                "3349011504"
-                            ],
-                            "VALUE": "Charged Grid"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1242927864",
                                 "3349011504"
                             ],
                             "VALUE": "Charged Grid"
@@ -8651,15 +8462,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1242927970",
-                                "2837155124"
-                            ],
-                            "VALUE": "Untouchable Force"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1242927970",
                                 "2837155124"
                             ],
                             "VALUE": "Untouchable Force"
@@ -8732,7 +8537,7 @@
     "DRACHENMAGIER": {
         "DESC_GOOD": {
             "HASHES": [
-                "0282973926"
+                "0154472996"
             ],
             "VALUE": "<AlignH Value=Center/>Character: <i>Dragon Mage</i><br>Orientation: Magic<br>Aspects: Dragon Magic, Elemental Magic, Mentalism<br><br>The magic that runs through my veins is not from this world. I am one of the chosen - one of those who are granted the right to study the magic of the dragons.<br><br>Only the best will earn the right to learn the most secret mysteries of these creatures and rightfully call themselves Dragon Mage! This is my goal. And I will give my everything for it."
         },
@@ -8864,15 +8669,9 @@
                 },
                 "SPELLS": [
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1245775003",
-                                "3705838349"
-                            ],
-                            "VALUE": "Dragon Berserk"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1245775003",
                                 "3705838349"
                             ],
                             "VALUE": "Dragon Berserk"
@@ -8939,15 +8738,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1245774899",
-                                "0482733901"
-                            ],
-                            "VALUE": "Dragon Form"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1245774899",
                                 "0482733901"
                             ],
                             "VALUE": "Dragon Form"
@@ -9014,15 +8807,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1245775005",
-                                "3123728555"
-                            ],
-                            "VALUE": "Dragon Strike"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1245775005",
                                 "3123728555"
                             ],
                             "VALUE": "Dragon Strike"
@@ -9089,15 +8876,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1245775004",
-                                "2219550735"
-                            ],
-                            "VALUE": "Eternal Fire"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1245775004",
                                 "2219550735"
                             ],
                             "VALUE": "Eternal Fire"
@@ -9164,15 +8945,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1245775006",
-                                "3574625864"
-                            ],
-                            "VALUE": "Familiar"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1245775006",
                                 "3574625864"
                             ],
                             "VALUE": "Familiar"
@@ -9361,15 +9136,9 @@
                 },
                 "SPELLS": [
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1245775010",
-                                "1144960842"
-                            ],
-                            "VALUE": "Destroyer"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1245775010",
                                 "1144960842"
                             ],
                             "VALUE": "Destroyer"
@@ -9436,15 +9205,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1245775008",
-                                "0731959971"
-                            ],
-                            "VALUE": "Gust of Wind"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1245775008",
                                 "0731959971"
                             ],
                             "VALUE": "Gust of Wind"
@@ -9511,15 +9274,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1245775009",
-                                "0264132184"
-                            ],
-                            "VALUE": "Magic Barrier"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1245775009",
                                 "0264132184"
                             ],
                             "VALUE": "Magic Barrier"
@@ -9586,15 +9343,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1245775007",
-                                "1836822460"
-                            ],
-                            "VALUE": "Tornado"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1245775007",
                                 "1836822460"
                             ],
                             "VALUE": "Tornado"
@@ -9661,15 +9412,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1245775011",
-                                "1969633817"
-                            ],
-                            "VALUE": "Protector"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1245775011",
                                 "1969633817"
                             ],
                             "VALUE": "Protector"
@@ -9858,15 +9603,9 @@
                 },
                 "SPELLS": [
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1245775012",
-                                "0265807460"
-                            ],
-                            "VALUE": "Mind Strike"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1245775012",
                                 "0265807460"
                             ],
                             "VALUE": "Mind Strike"
@@ -9933,15 +9672,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1245775116",
-                                "0366245707"
-                            ],
-                            "VALUE": "Energy Blaze"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1245775116",
                                 "0366245707"
                             ],
                             "VALUE": "Energy Blaze"
@@ -10008,15 +9741,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1245775117",
-                                "0363547324"
-                            ],
-                            "VALUE": "Maelstrom"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1245775117",
                                 "0363547324"
                             ],
                             "VALUE": "Maelstrom"
@@ -10083,15 +9810,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1245775118",
-                                "2072710481"
-                            ],
-                            "VALUE": "Combat Trance"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1245775118",
                                 "2072710481"
                             ],
                             "VALUE": "Combat Trance"
@@ -10158,15 +9879,9 @@
                         }
                     },
                     {
-                        "NAME": {
-                            "HASHES": [
-                                "1245775119",
-                                "1732477614"
-                            ],
-                            "VALUE": "Runes of Protection"
-                        },
                         "SPELLNAME": {
                             "HASHES": [
+                                "1245775119",
                                 "1732477614"
                             ],
                             "VALUE": "Runes of Protection"

@@ -1,94 +1,18 @@
 import tkinter as tk
-from tkinter import ttk
-from typing import Callable
-#import tkinter.font as tkfont
-
-import os
-import re
-import json
-
-class TraceableList(list):
-    def __init__(self, *args, **kwargs) -> None:
-        super(TraceableList, self).__init__(self, *args, **kwargs)
-        self._onChangeList = []
-    
-    def trace_add(self, func: Callable):
-        self._onChangeList.append(func)
-    
-    #def __setitem__(self, key, value) -> None:
-    #    super(TraceableList, self).__setitem__(key, value)
-    #    for func in self._onChangeList:
-    #        func()
-    
-    def __set__(self, newList: list) -> None:
-        self.clear()
-        for item in newList:
-            self.append(item)
-        for func in self._onChangeList:
-            func()
-
-class TraceableDict(dict):
-    def __init__(self, *args, **kwargs) -> None:
-        super().__init__(*args, **kwargs)
-        self._onChangeList = []
-    
-    def trace_add(self, func: Callable):
-        self._onChangeList.append(func)
-    
-    #def __setitem__(self, key, value) -> None:
-    #    super(TraceableDict, self).__setitem__(key, value)
-    #    for func in self._onChangeList:
-    #        func()
-
-    def __set__(self, newDict: dict) -> None:
-        self.clear()
-        for item in newDict.items():
-            self[item[0]] = item[1]
-        for func in self._onChangeList:
-            func()
-
-class BoundDict(dict):
-    def __init__(self, filepath: str | None = None) -> None:
-        if filepath != None:
-            self.resolvePath(filepath)
-            print(self.path)
-            with open(self.path, "r", encoding = "utf-8") as file:
-                file = "\n".join(file)
-                super(BoundDict, self).__init__(json.loads(str(file)))
-        else:
-            super(BoundDict, self).__init__()
-    
-    def resolvePath(self, filepath: str):
-        #print("RESOLVING", filepath)
-        self.path = ""
-        base = os.path.abspath(__file__)
-        base = re.split("\\\\", base)
-        base.pop(len(base) - 1)
-        for partialString in base:
-            if partialString != "":
-                self.path += partialString + "/"
-        self.path += filepath
-        #print("DONE", self.path)
-    
-    def save(self) -> None:
-        with open(self.path, "w", encoding = "utf-8") as file:
-            json.dump(self, file, indent = 4)
-    
-    def changeFilepath(self, newFilepath: str):
-        self.resolvePath(newFilepath)
-        newDict = BoundDict(newFilepath)
-        self.replace(newDict)
+from tkinter import Tk, ttk
+from scripts.Utils import BoundDict
+from scripts.Export import export
+from scripts.Reset import reset
 
 class Entry():
     def __init__(self, master, content: dict, key: str, row: int, column: int):
         
         self.content = content
         self.key = key
-        #self.font = tkfont.Font(family="Helvetica", size=8, weight="normal")
         
         self.textLength = 0
         self.value = tk.StringVar(master = master)
-        #self.value.trace_add("write", self.onWrite)
+        self.value.trace_add("write", self.onWrite)
         self.value.trace_add("write", self.updateWidth)
         
         self.label = tk.Label(master = master, text = key)
@@ -100,14 +24,11 @@ class Entry():
         self.update()
     
     def onWrite(self, *args, **kwargs):
-        pass
-        #d = self.content.get(self.key)
-        #print(d)
-        #if not isinstance(d, dict):
-        #    d = {}
-        #d["VALUE"] = self.value.get()
-        #print(d)
-        #self.content[self.key] = d
+        d = self.content.get(self.key)
+        if not isinstance(d, dict):
+            d = {}
+        d["VALUE"] = self.value.get()
+        self.content[self.key] = d
     
     def updateWidth(self, *args, **kwargs):
         #pxWidth = self.font.measure(text = self.value.get())
@@ -130,9 +51,11 @@ class Entry():
         self.update()
 
 class App(tk.Frame):
-    def __init__(self, master):
+    def __init__(self, master, root: Tk):
         super().__init__(master)
         self.pack()
+
+        self.root = root
         self.content = {
             "de_DE" : BoundDict("RES_MODIFIED/de_DE/res.json"),
             "en_EN" : BoundDict("RES_MODIFIED/en_EN/res.json"),
@@ -212,9 +135,30 @@ class App(tk.Frame):
         self.entry_spell_8 = Entry(self, self.currentSpellProperties, "MOD2B", 33, 1)
         self.entry_spell_9 = Entry(self, self.currentSpellProperties, "MOD3A", 34, 1)
         self.entry_spell_10 = Entry(self, self.currentSpellProperties, "MOD3B", 35, 1)
+        
+        # Buttons
+        self.labelButton = tk.Label(self, text = " ")
+        self.labelButton.grid(row = 36, column = 0, sticky = "w")
+
+        self.buttonSaveCurrent = tk.Button(self, text ="Save Current Language", command = self.saveCurrentLanguage)
+        self.buttonSaveCurrent.grid(row = 37, column = 0, sticky = "w")
+
+        self.buttonSaveAll = tk.Button(self, text ="Save All Languages", command = self.saveAll)
+        self.buttonSaveAll.grid(row = 37, column = 1, sticky = "w")
+
+        self.buttonExportCurrent = tk.Button(self, text ="Export Current Language", command = self.exportCurrentLanguage)
+        self.buttonExportCurrent.grid(row = 38, column = 0, sticky = "w")
+
+        self.buttonExportAll = tk.Button(self, text ="Export All Languages", command = self.exportAll)
+        self.buttonExportAll.grid(row = 38, column = 1, sticky = "w")
+
+        self.buttonResetCurrent = tk.Button(self, text ="Reset Current Language To BASE", command = self.resetCurrent)
+        self.buttonResetCurrent.grid(row = 39, column = 0, sticky = "w")
+
+        self.buttonResetAll = tk.Button(self, text ="Reset All Languages To BASE", command = self.resetAll)
+        self.buttonResetAll.grid(row = 39, column = 1, sticky = "w")
     
     def onChangeCurrentLanguage(self, *args, **kwargs):
-        #print("onChangeCurrentLanguage")
         languagePropertiesTest = self.content.get(self.currentLanguage.get())
         if isinstance(languagePropertiesTest, dict):
             self.currentLanguageProperties = languagePropertiesTest
@@ -223,7 +167,6 @@ class App(tk.Frame):
         self.resetHero()
     
     def onChangeCurrentHero(self, *args, **kwargs):
-        #print("onChangeCurrentHero")
         heroPropertiesTest = self.currentLanguageProperties.get(self.currentHero.get())
         if isinstance(heroPropertiesTest, dict):
             self.currentHeroProperties = heroPropertiesTest
@@ -234,7 +177,6 @@ class App(tk.Frame):
         self.resetAspect()
     
     def onChangeCurrentAspect(self, *args, **kwargs):
-        #print("onChangeCurrentAspect")
         self.currentAspectProperties = {}
         currentAspectIndexTest = self.aspectChoices.get(self.currentAspect.get())
         if isinstance(currentAspectIndexTest, int):
@@ -244,9 +186,10 @@ class App(tk.Frame):
                     try:
                         self.currentAspectProperties = aspectList[currentAspectIndexTest]
                     except IndexError as e:
-                        print(aspectList)
-                        print(currentAspectIndexTest)
-                        print(e)
+                        print("ERROR:")
+                        print("    ASPECTLIST: ", aspectList)
+                        print("    currentAspectIndex: ", currentAspectIndexTest)
+                        print("    ERROR: ", e)
         self.entry_aspect_0.updateContent(self.currentAspectProperties)
         self.entry_aspect_1.updateContent(self.currentAspectProperties)
         self.entry_aspect_2.updateContent(self.currentAspectProperties)
@@ -269,7 +212,6 @@ class App(tk.Frame):
         self.resetSpell()
     
     def onChangeCurrentSpell(self, *args, **kwargs):
-        #print("onChangeCurrentSpell")
         self.currentSpellProperties = {}
         currentSpellIndexTest = self.spellChoices.get(self.currentSpell.get())
         if isinstance(currentSpellIndexTest, int):
@@ -293,7 +235,6 @@ class App(tk.Frame):
         self.entry_spell_10.updateContent(self.currentSpellProperties)
 
     def resetHero(self):
-        #print("resetHero")
         # heroChoices
         if isinstance(self.currentLanguageProperties, dict):
             self.heroChoices = list(self.currentLanguageProperties.keys())
@@ -308,7 +249,6 @@ class App(tk.Frame):
         self.heroMenu["values"] = self.heroChoices
 
     def resetAspect(self):
-        #print("resetAspect")
         # aspectChoices
         aspectList = []
         if isinstance(self.currentHeroProperties, dict):
@@ -318,14 +258,10 @@ class App(tk.Frame):
             aspectIndex = 0
             for aspect in aspectList:
                 aspectnameEntry = aspect.get("ASPECTNAME")
-                print(aspectnameEntry)
                 if isinstance(aspectnameEntry, dict):
                     aspectname = aspectnameEntry.get("VALUE")
                     if isinstance(aspectname, str):
                         self.aspectChoices[aspectname] = aspectIndex
-                        print(aspectname, aspectIndex)
-                else:
-                    print(aspect)
                 aspectIndex += 1
         # currentAspect
         if not (self.currentAspect.get() in self.aspectChoices.keys()):
@@ -336,7 +272,6 @@ class App(tk.Frame):
         self.aspectMenu["values"] = list(self.aspectChoices.keys())
             
     def resetSpell(self):
-        #print("resetSpell")
         # spellChoices
         spellList = []
         if isinstance(self.currentAspectProperties, dict):
@@ -357,39 +292,79 @@ class App(tk.Frame):
         else:
             self.onChangeCurrentSpell()
         self.spellMenu["values"] = list(self.spellChoices.keys())
-
-    '''
-    def update_option_menu(self, optionsMenu, value, newList):
-        menu = optionsMenu["menu"]
-        menu.delete(0, "end")
-        for string in newList:
-            menu.add_command(label=string, command=lambda val=string: value.set(val))
-    '''
+    
+    def display(self, text):
+        self.labelButton["text"] = text
+        self.root.after(5000, self.display, " ")
+    
+    def saveCurrentLanguage(self):
+        d = self.content.get(self.currentLanguage.get())
+        if isinstance(d, BoundDict):
+            d.save()
+        self.display("Successfully Saved Current Language!")
+    
+    def saveAll(self):
+        for d in self.content.values():
+            if isinstance(d, BoundDict):
+                d.save()
+        self.display("Successfully Saved All Languages!")
+    
+    def exportCurrentLanguage(self):
+        l = self.currentLanguage.get()
+        d = self.content.get(l)
+        if isinstance(l, str) and isinstance(d, BoundDict):
+            export(d, l)
+        self.display("Successfully Exported Current Language!")
+    
+    def exportAll(self):
+        for item in self.content.items():
+            l = item[0]
+            d = item[1]
+            if isinstance(l, str) and isinstance(d, BoundDict):
+                export(d, l)
+        self.display("Successfully Exported All Languages!")
+    
+    def resetCurrent(self):
+        l = self.currentLanguage.get()
+        d = self.content.get(l)
+        if isinstance(d, BoundDict):
+            reset(l, d)
+        self.display("Successfully Reset Current Language!")
+    
+    def resetAll(self):
+        for item in self.content.items():
+            l = item[0]
+            d = item[1]
+            if isinstance(l, str) and isinstance(d, BoundDict):
+                reset(l, d)
+        self.display("Successfully Reset All Languages!")
+    
+    def exit(self):
+        self.root.destroy()
 
 
 root = tk.Tk()
 screen_width = root.winfo_screenwidth()
 screen_height = root.winfo_screenheight()
-#root.geometry("500x500")
 
 # main
 main_frame = tk.Frame(root)
 main_frame.pack(fill="both", expand=1)
 
-# tob
-top_frame = tk.Frame(main_frame)
-top_frame.pack(side="top", fill="both", expand=1)
+# top
+top_canvas = tk.Canvas(main_frame)
+top_canvas.pack(side="top", fill="both", expand=1)
 
 # canvas
-my_canvas = tk.Canvas(top_frame)
+my_canvas = tk.Canvas(top_canvas)
 my_canvas.pack(side="left", fill="both", expand=1)
 
 # scrollbar
-scrollbarVertical = tk.Scrollbar(top_frame, orient="vertical", command=my_canvas.yview)
+scrollbarVertical = tk.Scrollbar(top_canvas, orient="vertical", command=my_canvas.yview)
 scrollbarVertical.pack(side="right", fill="y")
 my_canvas.configure(yscrollcommand=scrollbarVertical.set)
-my_canvas.bind(
-    '<Configure>', lambda e: my_canvas.configure(scrollregion=my_canvas.bbox("all"))
+top_canvas.bind(
+    '<Configure>', lambda e: top_canvas.configure(scrollregion=my_canvas.bbox("all"))
 )
 
 scrollbarHorizontal = tk.Scrollbar(main_frame, orient="horizontal", command=my_canvas.xview)
@@ -401,7 +376,7 @@ my_canvas.bind(
 
 
 
-myApp = App(my_canvas)
+myApp = App(my_canvas, root)
 
 my_canvas.create_window((0, 0), window=myApp, anchor="nw")
 root.mainloop()

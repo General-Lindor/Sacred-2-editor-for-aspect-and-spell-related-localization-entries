@@ -2,9 +2,15 @@
     "SERAPHIM": {
         "DESC_GOOD": {
             "HASHES": [
-                "0278336949"
+                "2891048291"
             ],
             "VALUE": "<AlignH Value=Center/>Charakter: <i> Seraphim</i><br>Ausrichtung: Nahkampf / Magie<br>Aspekte: Kampf, Himmelsmagie, Technik<br><br>Ich entstamme dem Geschlecht der Seraphim! Jene \u00e4therischen Wesen, die seit Anbeginn der Zeit \u00fcber die Geschicke der Welten wachen! Vereint mit meinen Schwestern und unter den Augen Sophias erf\u00fcllten wir unsere Aufgabe mit Stolz!<br><br>Doch der Sch\u00f6pfer hat diese Welt verlassen. Und so warten wir geduldig auf den Tag, an dem er zur\u00fcckkehrt und unsere Aufgabe erf\u00fcllt ist."
+        },
+        "DESC_BAD": {
+            "HASHES": [
+                "2891048291"
+            ],
+            "VALUE": ""
         },
         "ASPECTS": [
             {
@@ -13,6 +19,62 @@
                         "1332499538"
                     ],
                     "VALUE": "Kampf"
+                },
+                "LORE_NAME": {
+                    "HASHES": [
+                        "3251345728",
+                        "4149018914"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_DESCRIPTION": {
+                    "HASHES": [
+                        "3232830688"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_MASTERY_NAME": {
+                    "HASHES": [
+                        "0134636164",
+                        "3102386278"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_MASTERY_ATMO_SHORT": {
+                    "HASHES": [
+                        "1618182691"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_MASTERY_ATMO_LONG": {
+                    "HASHES": [
+                        "1866728627"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_PROPERTIES_1": {
+                    "HASHES": [
+                        "0358066924"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_PROPERTIES_2": {
+                    "HASHES": [
+                        "0358066925"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_PROPERTIES_3": {
+                    "HASHES": [
+                        "0358066926"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_PROPERTIES_MASTERY": {
+                    "HASHES": [
+                        "0738858192"
+                    ],
+                    "VALUE": ""
                 },
                 "FOCUS_NAME": {
                     "HASHES": [
@@ -1357,7 +1419,7 @@
     "DRYADE": {
         "DESC_GOOD": {
             "HASHES": [
-                "3157784037"
+                "0598007955"
             ],
             "VALUE": "<AlignH Value=Center/>Charakter:<i> Dryade</i><br>Ausrichtung: Fernkampf / Magie<br>Aspekte: Jagd, Voodoo, Naturmagie<br><i><br></i> Ich entstamme aus den Tiefen der W\u00e4lder. Mein Herz schl\u00e4gt im Einklang mit dem Herzen der Natur und meine Seele sch\u00f6pft ihre Kraft aus der mystischen Kraft der B\u00e4ume.<br><br>Doch das Schicksal dieser Welt zwang mich, meine Heimat zu verlassen und den Kampf gegen die Vernichtung der Natur aufzunehmen. Ein Ziel, f\u00fcr das mir kein Opfer zu gro\u00df ist."
         },
@@ -1374,6 +1436,62 @@
                         "0335802969"
                     ],
                     "VALUE": "Jagd"
+                },
+                "LORE_NAME": {
+                    "HASHES": [
+                        "0167780999",
+                        "3006793449"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_DESCRIPTION": {
+                    "HASHES": [
+                        "0149265959"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_MASTERY_NAME": {
+                    "HASHES": [
+                        "3287377995",
+                        "0733866669"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_MASTERY_ATMO_SHORT": {
+                    "HASHES": [
+                        "0072764234"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_MASTERY_ATMO_LONG": {
+                    "HASHES": [
+                        "3069326282"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_PROPERTIES_1": {
+                    "HASHES": [
+                        "3510808755"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_PROPERTIES_2": {
+                    "HASHES": [
+                        "3510808756"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_PROPERTIES_3": {
+                    "HASHES": [
+                        "3510808757"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_PROPERTIES_MASTERY": {
+                    "HASHES": [
+                        "3488407031"
+                    ],
+                    "VALUE": ""
                 },
                 "FOCUS_NAME": {
                     "HASHES": [
@@ -2718,7 +2836,7 @@
     "SCHATTENKRIEGER": {
         "DESC_GOOD": {
             "HASHES": [
-                "2237981759"
+                "4124664205"
             ],
             "VALUE": "<AlignH Value=Center/>Charakter: <i> Schattenkrieger</i><br>Ausrichtung: Nahkampf<br>Aspekte: Schwerer Kampf, Taktischer Kampf, Astralebene<br><br>Einst war ich ein Soldat. In vielen Schlachten habe ich mich bewiesen, habe nie versagt, bin nie einem Kampf ausgewichen. Meine Feinde haben mich gef\u00fcrchtet. Und sie h\u00e4tten mich \u00fcber den Tod hinaus respektiert. Doch ich wurde betrogen. Eine unnat\u00fcrliche Macht hat mich um meinen letzten Sold, den verdienten Frieden gebracht, hat meinen K\u00f6rper zur\u00fcckgeholt in diese Welt.<br><br>So bin ich dazu verdammt, weiter zu existieren, als Kreatur des Schattens. Und so setze ich meinen Weg fort, in Treue und Ehre und in der Hoffnung, dass meine Wege mich eines Tages meinen Frieden finden lassen."
         },
@@ -2735,6 +2853,62 @@
                         "1011308535"
                     ],
                     "VALUE": "Schwerer Kampf"
+                },
+                "LORE_NAME": {
+                    "HASHES": [
+                        "0817125955",
+                        "3270041765"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_DESCRIPTION": {
+                    "HASHES": [
+                        "0798610915"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_MASTERY_NAME": {
+                    "HASHES": [
+                        "3550626311",
+                        "0165308009"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_MASTERY_ATMO_SHORT": {
+                    "HASHES": [
+                        "4026955398"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_MASTERY_ATMO_LONG": {
+                    "HASHES": [
+                        "3598430406"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_PROPERTIES_1": {
+                    "HASHES": [
+                        "3774057071"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_PROPERTIES_2": {
+                    "HASHES": [
+                        "3774057072"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_PROPERTIES_3": {
+                    "HASHES": [
+                        "3774057073"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_PROPERTIES_MASTERY": {
+                    "HASHES": [
+                        "3147630899"
+                    ],
+                    "VALUE": ""
                 },
                 "FOCUS_NAME": {
                     "HASHES": [
@@ -3146,6 +3320,62 @@
                         "1981296493"
                     ],
                     "VALUE": "Taktischer Kampf"
+                },
+                "LORE_NAME": {
+                    "HASHES": [
+                        "2301795067",
+                        "2471478621"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_DESCRIPTION": {
+                    "HASHES": [
+                        "2283280027"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_MASTERY_NAME": {
+                    "HASHES": [
+                        "2752063167",
+                        "3109547809"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_MASTERY_ATMO_SHORT": {
+                    "HASHES": [
+                        "2099512894"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_MASTERY_ATMO_LONG": {
+                    "HASHES": [
+                        "2859210750"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_PROPERTIES_1": {
+                    "HASHES": [
+                        "2975493927"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_PROPERTIES_2": {
+                    "HASHES": [
+                        "2975493928"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_PROPERTIES_3": {
+                    "HASHES": [
+                        "2975493929"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_PROPERTIES_MASTERY": {
+                    "HASHES": [
+                        "1220188395"
+                    ],
+                    "VALUE": ""
                 },
                 "FOCUS_NAME": {
                     "HASHES": [
@@ -4032,6 +4262,12 @@
         ]
     },
     "INQUISITOR": {
+        "DESC_GOOD": {
+            "HASHES": [
+                "1016540465"
+            ],
+            "VALUE": ""
+        },
         "DESC_BAD": {
             "HASHES": [
                 "1016540465"
@@ -4045,6 +4281,62 @@
                         "2558893431"
                     ],
                     "VALUE": "Inquisition"
+                },
+                "LORE_NAME": {
+                    "HASHES": [
+                        "2168767669",
+                        "1269682711"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_DESCRIPTION": {
+                    "HASHES": [
+                        "2150252629"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_MASTERY_NAME": {
+                    "HASHES": [
+                        "1550267257",
+                        "1135632091"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_MASTERY_ATMO_SHORT": {
+                    "HASHES": [
+                        "2295791928"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_MASTERY_ATMO_LONG": {
+                    "HASHES": [
+                        "3773153176"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_PROPERTIES_1": {
+                    "HASHES": [
+                        "1773698017"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_PROPERTIES_2": {
+                    "HASHES": [
+                        "1773698018"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_PROPERTIES_3": {
+                    "HASHES": [
+                        "1773698019"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_PROPERTIES_MASTERY": {
+                    "HASHES": [
+                        "1416467429"
+                    ],
+                    "VALUE": ""
                 },
                 "FOCUS_NAME": {
                     "HASHES": [
@@ -5400,7 +5692,7 @@
     "HOCHELFE": {
         "DESC_GOOD": {
             "HASHES": [
-                "2215288394"
+                "1235812808"
             ],
             "VALUE": "<AlignH Value=Center/>Charakter: <i>Hochelfe</i><br>Ausrichtung: Magie<br>Aspekte: Inferno, Sturm, Arkan<br><br>Lang und beschwerlich waren meine Studien der Magie. Doch sie waren nicht vergebens. Die Privilegien meines Standes haben mir Zugang zu den geheimsten Archiven Thylysiums verschafft und mich so zu einer perfekten Magierin gemacht.<br><br>Nun, nach all den Jahren des Lernens, muss ich beweisen, dass meine Ausbildung nicht umsonst war. Ancaria wartet!"
         },
@@ -6817,7 +7109,7 @@
     "TEMPELWACHE": {
         "DESC_GOOD": {
             "HASHES": [
-                "1684884299"
+                "1915273049"
             ],
             "VALUE": "<AlignH Value=Center/>Charakter: <i>Tempelw\u00e4chter</i><br>Ausrichtung: Nah- / Fernkampfhybrid<br>Aspekte: Nahkampf, Technik, T-Energie<br><br>Seit Anbeginn der Zeit schon sind meine Br\u00fcder und ich in Ancaria. Geschaffen vom Erbauer der Welt, belebt durch seine sch\u00f6pferische Energie. Auch wenn unsere K\u00f6rper aus lebloser Materie bestehen, so ist mein Geist doch lebendig. Nur wenige von uns haben den gro\u00dfen Krieg \u00fcberstanden.<br><br>Auch wenn unser Ziel verloren und unsere Aufgabe unerf\u00fcllbar scheint, ich werde nicht ruhen, bis meine Bestimmung erreicht ist."
         },
@@ -6834,6 +7126,62 @@
                         "2122888059"
                     ],
                     "VALUE": "Nahkampf"
+                },
+                "LORE_NAME": {
+                    "HASHES": [
+                        "3085082681",
+                        "0282946459"
+                    ],
+                    "VALUE": "Nahkampfkunde"
+                },
+                "LORE_DESCRIPTION": {
+                    "HASHES": [
+                        "3066567641"
+                    ],
+                    "VALUE": "Erh\u00f6ht den Schaden, die kritische Trefferchance und die Ausf\u00fchrungsgeschwindigkeit des Aspekts Nahkampf. Erm\u00f6glicht Kampfkunstausbauten im Aspekt Nahkampf."
+                },
+                "LORE_MASTERY_NAME": {
+                    "HASHES": [
+                        "0563531005",
+                        "2664609375"
+                    ],
+                    "VALUE": "Nahkampfbeherrschung"
+                },
+                "LORE_MASTERY_ATMO_SHORT": {
+                    "HASHES": [
+                        "1078628668"
+                    ],
+                    "VALUE": "Der Schaden wird zus\u00e4tzlich erh\u00f6ht."
+                },
+                "LORE_MASTERY_ATMO_LONG": {
+                    "HASHES": [
+                        "3838398940"
+                    ],
+                    "VALUE": "Erh\u00f6ht den Schaden, die kritische Trefferchance und die Ausf\u00fchrungsgeschwindigkeit des Aspekts Nahkampf deutlich. Erm\u00f6glicht Kampfkunstausbauten im Aspekt Nahkampf."
+                },
+                "LORE_PROPERTIES_1": {
+                    "HASHES": [
+                        "0786961765"
+                    ],
+                    "VALUE": "Schaden"
+                },
+                "LORE_PROPERTIES_2": {
+                    "HASHES": [
+                        "0786961766"
+                    ],
+                    "VALUE": "Chance auf kritischen Treffer"
+                },
+                "LORE_PROPERTIES_3": {
+                    "HASHES": [
+                        "0786961767"
+                    ],
+                    "VALUE": "Geschwindigkeit"
+                },
+                "LORE_PROPERTIES_MASTERY": {
+                    "HASHES": [
+                        "0199304169"
+                    ],
+                    "VALUE": ""
                 },
                 "FOCUS_NAME": {
                     "HASHES": [
@@ -8189,7 +8537,7 @@
     "DRACHENMAGIER": {
         "DESC_GOOD": {
             "HASHES": [
-                "0282973926"
+                "0154472996"
             ],
             "VALUE": "<AlignH Value=Center/>Charakter: <i> Drachenmagier</i><br>Ausrichtung: Magie<br>Aspekte: Drachenmagie, Elementarmagie, Mentalist<br><br>Die Magie, die mich durchflie\u00dft, ist nicht von dieser Welt. Ich geh\u00f6re zu den Auserw\u00e4hlten, denen es verg\u00f6nnt ist, die Magie der Drachen studieren zu d\u00fcrfen. <br><br>Nur den besten von uns ist es verg\u00f6nnt, auch die letzten Geheimnisse dieser Wesen zu erforschen, um sich dann mit Fug und Recht Drachenmagier nennen zu k\u00f6nnen! Dies ist das Ziel, das ich mir gesetzt habe. Und zu dessen Erlangen ich alles zu geben bereit bin."
         },

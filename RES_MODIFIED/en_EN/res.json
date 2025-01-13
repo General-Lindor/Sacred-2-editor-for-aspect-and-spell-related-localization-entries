@@ -2,9 +2,15 @@
     "SERAPHIM": {
         "DESC_GOOD": {
             "HASHES": [
-                "0278336949"
+                "2891048291"
             ],
             "VALUE": "<AlignH Value=Center/>Character: <i>Seraphim</i><br>Orientation: Melee / Holy Magic<br>Aspects: Exalted Warrior, Celestial Magic, Revered Technology<br><br>I am one of the Seraphim, the ethereal beings who have been watching over the fate of the world since the beginning of time. United as sisters under the watchful eye of Sophia we were committed to our duty and proud to serve.<br><br>Yet the creator has left this world. Thus we are patiently waiting for the day when he will finally return, the day when our duty will be fulfilled."
+        },
+        "DESC_BAD": {
+            "HASHES": [
+                "2891048291"
+            ],
+            "VALUE": ""
         },
         "ASPECTS": [
             {
@@ -13,6 +19,62 @@
                         "1332499538"
                     ],
                     "VALUE": "Exalted Warrior"
+                },
+                "LORE_NAME": {
+                    "HASHES": [
+                        "3251345728",
+                        "4149018914"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_DESCRIPTION": {
+                    "HASHES": [
+                        "3232830688"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_MASTERY_NAME": {
+                    "HASHES": [
+                        "0134636164",
+                        "3102386278"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_MASTERY_ATMO_SHORT": {
+                    "HASHES": [
+                        "1618182691"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_MASTERY_ATMO_LONG": {
+                    "HASHES": [
+                        "1866728627"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_PROPERTIES_1": {
+                    "HASHES": [
+                        "0358066924"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_PROPERTIES_2": {
+                    "HASHES": [
+                        "0358066925"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_PROPERTIES_3": {
+                    "HASHES": [
+                        "0358066926"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_PROPERTIES_MASTERY": {
+                    "HASHES": [
+                        "0738858192"
+                    ],
+                    "VALUE": ""
                 },
                 "FOCUS_NAME": {
                     "HASHES": [
@@ -1357,7 +1419,7 @@
     "DRYADE": {
         "DESC_GOOD": {
             "HASHES": [
-                "3157784037"
+                "0598007955"
             ],
             "VALUE": "<AlignH Value=Center/>Character: <i>Dryad</i><br>Orientation: Ranged Combat / Magic<br>Aspects: Capricious Hunter, Cabalistic Voodoo, Nature Weaver<br><br>I'm from the deep woods. My heart beats in tune with nature and my soul draws its power from the mystical force of the trees.<br>But the world's destiny forced me to leave my home and fight to prevent nature's destruction. I spare no pains for this aim."
         },
@@ -1374,6 +1436,62 @@
                         "0335802969"
                     ],
                     "VALUE": "Capricious Hunter"
+                },
+                "LORE_NAME": {
+                    "HASHES": [
+                        "0167780999",
+                        "3006793449"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_DESCRIPTION": {
+                    "HASHES": [
+                        "0149265959"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_MASTERY_NAME": {
+                    "HASHES": [
+                        "3287377995",
+                        "0733866669"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_MASTERY_ATMO_SHORT": {
+                    "HASHES": [
+                        "0072764234"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_MASTERY_ATMO_LONG": {
+                    "HASHES": [
+                        "3069326282"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_PROPERTIES_1": {
+                    "HASHES": [
+                        "3510808755"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_PROPERTIES_2": {
+                    "HASHES": [
+                        "3510808756"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_PROPERTIES_3": {
+                    "HASHES": [
+                        "3510808757"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_PROPERTIES_MASTERY": {
+                    "HASHES": [
+                        "3488407031"
+                    ],
+                    "VALUE": ""
                 },
                 "FOCUS_NAME": {
                     "HASHES": [
@@ -2718,7 +2836,7 @@
     "SCHATTENKRIEGER": {
         "DESC_GOOD": {
             "HASHES": [
-                "2237981759"
+                "4124664205"
             ],
             "VALUE": "<AlignH Value=Center/>Character: <i>Shadow Warrior</i><br>Orientation: Melee<br>Aspects: Death Warrior, Malevolent Champion, Astral Lord<br><br>Once I was a soldier. I proved myself in many battles. I never failed and I never avoided a fight. My enemies feared me and I was respected long after I was gone. But I was betrayed. An unnatural force robbed me of my final dues, the peace I had earned and brought my body back into this world.<br><br>This is how I was damned to continue my existence as a creature of the shadows. And so I set out on my way in faith and honor hoping that one day my path might lead me to eternal peace..."
         },
@@ -2735,6 +2853,62 @@
                         "1011308535"
                     ],
                     "VALUE": "Death Warrior"
+                },
+                "LORE_NAME": {
+                    "HASHES": [
+                        "0817125955",
+                        "3270041765"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_DESCRIPTION": {
+                    "HASHES": [
+                        "0798610915"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_MASTERY_NAME": {
+                    "HASHES": [
+                        "3550626311",
+                        "0165308009"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_MASTERY_ATMO_SHORT": {
+                    "HASHES": [
+                        "4026955398"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_MASTERY_ATMO_LONG": {
+                    "HASHES": [
+                        "3598430406"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_PROPERTIES_1": {
+                    "HASHES": [
+                        "3774057071"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_PROPERTIES_2": {
+                    "HASHES": [
+                        "3774057072"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_PROPERTIES_3": {
+                    "HASHES": [
+                        "3774057073"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_PROPERTIES_MASTERY": {
+                    "HASHES": [
+                        "3147630899"
+                    ],
+                    "VALUE": ""
                 },
                 "FOCUS_NAME": {
                     "HASHES": [
@@ -3146,6 +3320,62 @@
                         "1981296493"
                     ],
                     "VALUE": "Malevolent Champion"
+                },
+                "LORE_NAME": {
+                    "HASHES": [
+                        "2301795067",
+                        "2471478621"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_DESCRIPTION": {
+                    "HASHES": [
+                        "2283280027"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_MASTERY_NAME": {
+                    "HASHES": [
+                        "2752063167",
+                        "3109547809"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_MASTERY_ATMO_SHORT": {
+                    "HASHES": [
+                        "2099512894"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_MASTERY_ATMO_LONG": {
+                    "HASHES": [
+                        "2859210750"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_PROPERTIES_1": {
+                    "HASHES": [
+                        "2975493927"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_PROPERTIES_2": {
+                    "HASHES": [
+                        "2975493928"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_PROPERTIES_3": {
+                    "HASHES": [
+                        "2975493929"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_PROPERTIES_MASTERY": {
+                    "HASHES": [
+                        "1220188395"
+                    ],
+                    "VALUE": ""
                 },
                 "FOCUS_NAME": {
                     "HASHES": [
@@ -4032,6 +4262,12 @@
         ]
     },
     "INQUISITOR": {
+        "DESC_GOOD": {
+            "HASHES": [
+                "1016540465"
+            ],
+            "VALUE": ""
+        },
         "DESC_BAD": {
             "HASHES": [
                 "1016540465"
@@ -4045,6 +4281,62 @@
                         "2558893431"
                     ],
                     "VALUE": "Gruesome Inquisition"
+                },
+                "LORE_NAME": {
+                    "HASHES": [
+                        "2168767669",
+                        "1269682711"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_DESCRIPTION": {
+                    "HASHES": [
+                        "2150252629"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_MASTERY_NAME": {
+                    "HASHES": [
+                        "1550267257",
+                        "1135632091"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_MASTERY_ATMO_SHORT": {
+                    "HASHES": [
+                        "2295791928"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_MASTERY_ATMO_LONG": {
+                    "HASHES": [
+                        "3773153176"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_PROPERTIES_1": {
+                    "HASHES": [
+                        "1773698017"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_PROPERTIES_2": {
+                    "HASHES": [
+                        "1773698018"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_PROPERTIES_3": {
+                    "HASHES": [
+                        "1773698019"
+                    ],
+                    "VALUE": ""
+                },
+                "LORE_PROPERTIES_MASTERY": {
+                    "HASHES": [
+                        "1416467429"
+                    ],
+                    "VALUE": ""
                 },
                 "FOCUS_NAME": {
                     "HASHES": [
@@ -5400,7 +5692,7 @@
     "HOCHELFE": {
         "DESC_GOOD": {
             "HASHES": [
-                "2215288394"
+                "1235812808"
             ],
             "VALUE": "<AlignH Value=Center/>Character: <i>High Elf</i><br>Orientation: Magic<br>Aspect: Arrant Pyromancer, Mystic Stormite, Delphic Arcania<br><br>My studies of magic were long and arduous. Still, they were not in vain. Due to my heritage I have been given access to the most secret archives of Thylysium and thus I was able to perfect my abilities and my knowledge of the arcane sciences.<br><br>Now, after all these years of studying I must prove that my education was fruitful. Ancaria awaits!"
         },
@@ -6817,7 +7109,7 @@
     "TEMPELWACHE": {
         "DESC_GOOD": {
             "HASHES": [
-                "1684884299"
+                "1915273049"
             ],
             "VALUE": "<AlignH Value=Center/>Character: <i>Temple Guardian</i><br>Orientation: Melee and Ranged Combat<br>Aspects: Devout Guardian, Lost Fusion, Source Warden<br><br>Me and my brethren have existed in Ancaria since the beginning of time. Brought into being by the creator of this world, animated through his energy. Our bodies may consist of lifeless materials, but my spirit is alive. Few of us have survived the Great War.<br><br>We may have lost our ways and our task may seem to be unaccomplishable, but I shall not rest until I have fulfilled my destiny."
         },
@@ -6834,6 +7126,62 @@
                         "2122888059"
                     ],
                     "VALUE": "Devout Guardian"
+                },
+                "LORE_NAME": {
+                    "HASHES": [
+                        "3085082681",
+                        "0282946459"
+                    ],
+                    "VALUE": "Devout Guardian Lore"
+                },
+                "LORE_DESCRIPTION": {
+                    "HASHES": [
+                        "3066567641"
+                    ],
+                    "VALUE": "Increases damage, critical hit chance, and execution speed of the Devout Guardian aspect. Enables the use of modifications for this aspect."
+                },
+                "LORE_MASTERY_NAME": {
+                    "HASHES": [
+                        "0563531005",
+                        "2664609375"
+                    ],
+                    "VALUE": "Devout Guardian Proficiency"
+                },
+                "LORE_MASTERY_ATMO_SHORT": {
+                    "HASHES": [
+                        "1078628668"
+                    ],
+                    "VALUE": "Further increases inflicted damage."
+                },
+                "LORE_MASTERY_ATMO_LONG": {
+                    "HASHES": [
+                        "3838398940"
+                    ],
+                    "VALUE": "Significantly increases damage, critical hit chance, and execution speed of the Devout Guardian aspect. Enables the use of modifications for this aspect."
+                },
+                "LORE_PROPERTIES_1": {
+                    "HASHES": [
+                        "0786961765"
+                    ],
+                    "VALUE": "Damage"
+                },
+                "LORE_PROPERTIES_2": {
+                    "HASHES": [
+                        "0786961766"
+                    ],
+                    "VALUE": "Chance for Critical Hit"
+                },
+                "LORE_PROPERTIES_3": {
+                    "HASHES": [
+                        "0786961767"
+                    ],
+                    "VALUE": "Execution Speed"
+                },
+                "LORE_PROPERTIES_MASTERY": {
+                    "HASHES": [
+                        "0199304169"
+                    ],
+                    "VALUE": ""
                 },
                 "FOCUS_NAME": {
                     "HASHES": [
@@ -8189,7 +8537,7 @@
     "DRACHENMAGIER": {
         "DESC_GOOD": {
             "HASHES": [
-                "0282973926"
+                "0154472996"
             ],
             "VALUE": "<AlignH Value=Center/>Character: <i>Dragon Mage</i><br>Orientation: Magic<br>Aspects: Dragon Magic, Elemental Magic, Mentalism<br><br>The magic that runs through my veins is not from this world. I am one of the chosen - one of those who are granted the right to study the magic of the dragons.<br><br>Only the best will earn the right to learn the most secret mysteries of these creatures and rightfully call themselves Dragon Mage! This is my goal. And I will give my everything for it."
         },

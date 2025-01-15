@@ -12,23 +12,21 @@ class App(tk.Frame):
             "en_EN" : BoundDict("ressources/MODIFIED/en_EN/res.json"),
         }
 
-        self.sectionFrame = tk.Frame(self)
-        self.sectionFrame.grid(row = 0, column = 0, sticky = "w", padx = 5, pady = 5)
-
         # create in reverse order
-        self.sectionSpell = SectionSpell.SectionSpell(self.sectionFrame)
-        self.sectionAspect = SectionAspect.SectionAspect(self.sectionFrame, self.sectionSpell)
-        self.sectionHero = SectionHero.SectionHero(self.sectionFrame, self.sectionAspect)
-        self.sectionLanguage = SectionLanguage.SectionLanguage(self.sectionFrame, self.content, self.sectionHero)
+        self.sectionSpell = SectionSpell.SectionSpell(self)
+        self.sectionAspect = SectionAspect.SectionAspect(self, self.sectionSpell)
+        self.sectionHero = SectionHero.SectionHero(self, self.sectionAspect)
+        self.sectionLanguage = SectionLanguage.SectionLanguage(self, self.content, self.sectionHero)
 
         # grid in forwards order
-        self.sectionLanguage.grid(row = 0, column = 0, sticky = "nw", padx = 5, pady = 5)
-        self.sectionHero.grid(row = 1, column = 0, sticky = "nw", padx = 5, pady = 5)
-        self.sectionAspect.grid(row = 2, column = 0, sticky = "nw", padx = 5, pady = 5)
-        self.sectionSpell.grid(row = 3, column = 0, sticky = "nw", padx = 5, pady = 5)
+        self.sectionLanguage.grid(row = 0, column = 0, sticky = "nw", padx = 10, pady = 5)
+        self.sectionHero.grid(row = 1, column = 0, sticky = "nw", padx = 10, pady = 5)
+        self.sectionAspect.grid(row = 2, column = 0, sticky = "nw", padx = 10, pady = 5)
+        self.sectionSpell.grid(row = 3, column = 0, sticky = "nw", padx = 10, pady = 5)
 
+        # create and grid buttons
         self.Buttons = Buttons.Buttons(self, self.root, self.content, self.sectionLanguage)
-        self.Buttons.grid(row = 4, column = 0, sticky = "nw", padx = 5, pady = 5)
+        self.Buttons.grid(row = 4, column = 0, sticky = "nw", padx = 10, pady = 5)
 
 class Window():
     def __init__(self):
@@ -43,28 +41,29 @@ class Window():
 
         self.scrollbarVertical = tk.Scrollbar(self.root, orient = "vertical", command = self.onSrollY)
         self.scrollbarHorizontal = tk.Scrollbar(self.root, orient = "horizontal", command = self.onSrollX)
-        self.scrollbarVertical.bind('<Configure>', self.onResizeScrollY)
-        self.scrollbarHorizontal.bind('<Configure>', self.onResizeScrollX)
 
         self.scX: float = 0.0
         self.scY: float = 0.0
-
-        self.content.bind('<Configure>', self.onResizeContent)
-        self.root.bind('<Configure>', self.onResizeRoot)
             
         self.root.update_idletasks()
-        self.widthScrollBar = self.scrollbarVertical.winfo_width()
-        self.widthRoot = self.root.winfo_width()
-        self.widthContent = self.content.winfo_width()
-        self.widthEff = self.widthRoot - self.widthScrollBar
 
-        self.heightScrollBar = self.scrollbarHorizontal.winfo_height()
-        self.heightRoot = self.root.winfo_height()
-        self.heightContent = self.content.winfo_height()
-        self.heightEff = self.heightRoot - self.heightScrollBar
+        self.widthScrollBar:    float = self.scrollbarVertical.winfo_width()
+        self.widthRoot:         float = self.root.winfo_width()
+        self.widthContent:      float = self.content.winfo_width()
+        self.widthEff:          float = self.widthRoot - self.widthScrollBar
+
+        self.heightScrollBar:   float = self.scrollbarHorizontal.winfo_height()
+        self.heightRoot:        float = self.root.winfo_height()
+        self.heightContent:     float = self.content.winfo_height()
+        self.heightEff:         float = self.heightRoot - self.heightScrollBar
 
         self.scW: float = self.widthEff / self.widthContent
         self.scH: float = self.heightEff / self.heightContent
+
+        self.root.bind('<Configure>', self.onResizeRoot, add = False)
+        self.content.bind('<Configure>', self.onResizeContent, add = False)
+        self.scrollbarVertical.bind('<Configure>', self.onResizeScrollY, add = False)
+        self.scrollbarHorizontal.bind('<Configure>', self.onResizeScrollX, add = False)
     
         self.placeWidgets()
     
@@ -73,6 +72,7 @@ class Window():
             return
         if event.widget != self.content:
             return
+        self.root.update_idletasks()
         self.widthContent = self.content.winfo_width()
         self.heightContent = self.content.winfo_height()
         self.scW = self.widthEff / self.widthContent
@@ -84,6 +84,7 @@ class Window():
             return
         if event.widget != self.root:
             return
+        self.root.update_idletasks()
         self.widthRoot = self.root.winfo_width()
         self.widthEff = self.widthRoot - self.widthScrollBar
         self.heightRoot = self.root.winfo_height()
@@ -97,6 +98,7 @@ class Window():
             return
         if event.widget != self.scrollbarHorizontal:
             return
+        self.root.update_idletasks()
         self.heightScrollBar = self.scrollbarHorizontal.winfo_height()
         self.heightEff = self.heightRoot - self.heightScrollBar
         self.scH = self.heightEff / self.heightContent
@@ -107,6 +109,7 @@ class Window():
             return
         if event.widget != self.scrollbarVertical:
             return
+        self.root.update_idletasks()
         self.widthScrollBar = self.scrollbarVertical.winfo_width()
         self.widthEff = self.widthRoot - self.widthScrollBar
         self.scW = self.widthEff / self.widthContent
@@ -131,25 +134,29 @@ class Window():
         self.calcScrollX()
         self.calcScrollY()
     
-    def calcScrollX(self, *args, **kwargs):
+    def calcScrollX(self):
         left = self.scX
         right = left + self.scW
-        self.root.update_idletasks()
-        self.scrollbarHorizontal.set(str(left), str(right))
+        self.scrollbarHorizontal.set(left, right)
     
-    def calcScrollY(self, *args, **kwargs):
+    def calcScrollY(self):
         top = self.scY
         bottom = top + self.scH
-        self.root.update_idletasks()
         self.scrollbarVertical.set(top, bottom)
 
-    def onSrollX(self, a, b, *args):
-        self.scX = float(b)
-        self.placeWidgets()
+    def onSrollX(self, *args):
+        try:
+            self.scX = float(args[1])
+            self.placeWidgets()
+        except Exception:
+            pass
 
-    def onSrollY(self, a, b, *args):
-        self.scY = float(b)
-        self.placeWidgets()
+    def onSrollY(self, *args):
+        try:
+            self.scY = float(args[1])
+            self.placeWidgets()
+        except Exception:
+            pass
 
 W = Window()
 W.root.mainloop()

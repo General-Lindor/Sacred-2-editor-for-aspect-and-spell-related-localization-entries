@@ -1,382 +1,155 @@
 import tkinter as tk
-from tkinter import Tk, ttk
+from tkinter import Tk, Widget, Event
 from scripts.Utils import BoundDict
-from scripts.Export import export
-from scripts.Reset import reset
-
-class Entry():
-    def __init__(self, master, content: dict, key: str, row: int, column: int):
-        
-        self.content = content
-        self.key = key
-        
-        self.textLength = 0
-        self.value = tk.StringVar(master = master)
-        self.value.trace_add("write", self.onWrite)
-        self.value.trace_add("write", self.updateWidth)
-        
-        self.label = tk.Label(master = master, text = key)
-        self.label.grid(row = row, column = column, sticky = "w")
-
-        self.entry = tk.Entry(master = master, textvariable = self.value, font = "Helvetica 10 normal")
-        self.entry.grid(row = row, column = column + 1, sticky = "w")
-
-        self.update()
-    
-    def onWrite(self, *args, **kwargs):
-        d = self.content.get(self.key)
-        if not isinstance(d, dict):
-            d = {}
-        d["VALUE"] = self.value.get()
-        self.content[self.key] = d
-    
-    def updateWidth(self, *args, **kwargs):
-        #pxWidth = self.font.measure(text = self.value.get())
-        #avgWidth = self.font.measure("0")
-        #width = round(pxWidth / avgWidth)
-        width = len(self.value.get())
-        self.entry["width"] = width
-    
-    def update(self):
-        d = self.content.get(self.key)
-        if isinstance(d, dict):
-            s = d.get("VALUE")
-            if isinstance(s, str):
-                self.value.set(s)
-                return
-        self.value.set("")
-    
-    def updateContent(self, newContent: dict):
-        self.content = newContent
-        self.update()
+from widgets import SectionLanguage, SectionHero, SectionAspect, SectionSpell, Buttons
 
 class App(tk.Frame):
-    def __init__(self, master, root: Tk):
-        super().__init__(master)
-        self.pack()
-
+    def __init__(self, root: Tk):
+        super(App, self).__init__(root)
         self.root = root
         self.content = {
-            "de_DE" : BoundDict("RES_MODIFIED/de_DE/res.json"),
-            "en_EN" : BoundDict("RES_MODIFIED/en_EN/res.json"),
+            "de_DE" : BoundDict("ressources/MODIFIED/de_DE/res.json"),
+            "en_EN" : BoundDict("ressources/MODIFIED/en_EN/res.json"),
         }
 
-        # LANGUAGE
-        self.languageChoices = list(self.content.keys())
-        self.currentLanguage = tk.StringVar(master = self)
-        self.currentLanguage.trace_add("write", self.onChangeCurrentLanguage)
-        self.currentLanguageProperties = {}
+        self.sectionFrame = tk.Frame(self)
+        self.sectionFrame.grid(row = 0, column = 0, sticky = "w", padx = 5, pady = 5)
 
-        tk.Label(master = self, text="Choose a language: ").grid(row = 0, column = 0, sticky = "w")
-        self.languageMenu = ttk.Combobox(master = self, textvariable = self.currentLanguage, values = self.languageChoices)
-        self.languageMenu.grid(row = 0, column = 1)
+        # create in reverse order
+        self.sectionSpell = SectionSpell.SectionSpell(self.sectionFrame)
+        self.sectionAspect = SectionAspect.SectionAspect(self.sectionFrame, self.sectionSpell)
+        self.sectionHero = SectionHero.SectionHero(self.sectionFrame, self.sectionAspect)
+        self.sectionLanguage = SectionLanguage.SectionLanguage(self.sectionFrame, self.content, self.sectionHero)
 
-        # HERO
-        self.heroChoices = []
-        self.currentHero = tk.StringVar(master = self)
-        self.currentHero.trace_add("write", self.onChangeCurrentHero)
-        self.currentHeroProperties = {}
+        # grid in forwards order
+        self.sectionLanguage.grid(row = 0, column = 0, sticky = "nw", padx = 5, pady = 5)
+        self.sectionHero.grid(row = 1, column = 0, sticky = "nw", padx = 5, pady = 5)
+        self.sectionAspect.grid(row = 2, column = 0, sticky = "nw", padx = 5, pady = 5)
+        self.sectionSpell.grid(row = 3, column = 0, sticky = "nw", padx = 5, pady = 5)
 
-        tk.Label(master = self, text="Choose a hero: ").grid(row = 1, column = 0, sticky = "w")
-        self.heroMenu = ttk.Combobox(master = self, textvariable = self.currentHero, values = [])
-        self.heroMenu.grid(row = 1, column = 1)
+        self.Buttons = Buttons.Buttons(self, self.root, self.content, self.sectionLanguage)
+        self.Buttons.grid(row = 4, column = 0, sticky = "nw", padx = 5, pady = 5)
 
-        self.entry_hero_0 = Entry(self, self.currentHeroProperties, "DESC_GOOD", 2, 1)
-        self.entry_hero_1 = Entry(self, self.currentHeroProperties, "DESC_BAD", 3, 1)
+class Window():
+    def __init__(self):
+        self.root = tk.Tk()
+        self.root.geometry("500x500")
+        self.root.title("Sacred 2 Aspects & Spells ressources Editor")
 
-        # ASPECT
-        self.aspectChoices = {}
-        self.currentAspect = tk.StringVar(master = self)
-        self.currentAspect.trace_add("write", self.onChangeCurrentAspect)
-        self.currentAspectProperties = {}
+        #screen_width = root.winfo_screenwidth()
+        #screen_height = root.winfo_screenheight()
 
-        tk.Label(master = self, text="Choose an aspect: ").grid(row = 4, column = 0, sticky = "w")
-        self.aspectMenu = ttk.Combobox(master = self, textvariable = self.currentAspect, values = [])
-        self.aspectMenu.grid(row = 4, column = 1)
+        self.content = App(self.root)
 
-        self.entry_aspect_0 = Entry(self, self.currentAspectProperties, "ASPECTNAME", 5, 1)
-        self.entry_aspect_1 = Entry(self, self.currentAspectProperties, "LORE_NAME", 6, 1)
-        self.entry_aspect_2 = Entry(self, self.currentAspectProperties, "LORE_DESCRIPTION", 7, 1)
-        self.entry_aspect_3 = Entry(self, self.currentAspectProperties, "LORE_MASTERY_NAME", 8, 1)
-        self.entry_aspect_4 = Entry(self, self.currentAspectProperties, "LORE_MASTERY_ATMO_SHORT", 9, 1)
-        self.entry_aspect_5 = Entry(self, self.currentAspectProperties, "LORE_MASTERY_ATMO_LONG", 10, 1)
-        self.entry_aspect_6 = Entry(self, self.currentAspectProperties, "LORE_PROPERTIES_1", 11, 1)
-        self.entry_aspect_7 = Entry(self, self.currentAspectProperties, "LORE_PROPERTIES_2", 12, 1)
-        self.entry_aspect_8 = Entry(self, self.currentAspectProperties, "LORE_PROPERTIES_3", 13, 1)
-        self.entry_aspect_9 = Entry(self, self.currentAspectProperties, "LORE_PROPERTIES_MASTERY", 14, 1)
-        self.entry_aspect_10 = Entry(self, self.currentAspectProperties, "FOCUS_NAME", 15, 1)
-        self.entry_aspect_11 = Entry(self, self.currentAspectProperties, "FOCUS_DESCRIPTION", 16, 1)
-        self.entry_aspect_12 = Entry(self, self.currentAspectProperties, "FOCUS_MASTERY_NAME", 17, 1)
-        self.entry_aspect_13 = Entry(self, self.currentAspectProperties, "FOCUS_MASTERY_ATMO_SHORT", 18, 1)
-        self.entry_aspect_14 = Entry(self, self.currentAspectProperties, "FOCUS_MASTERY_ATMO_LONG", 19, 1)
-        self.entry_aspect_15 = Entry(self, self.currentAspectProperties, "FOCUS_PROPERTIES_1", 20, 1)
-        self.entry_aspect_16 = Entry(self, self.currentAspectProperties, "FOCUS_PROPERTIES_2", 21, 1)
-        self.entry_aspect_17 = Entry(self, self.currentAspectProperties, "FOCUS_PROPERTIES_3", 22, 1)
-        self.entry_aspect_18 = Entry(self, self.currentAspectProperties, "FOCUS_PROPERTIES_MASTERY", 23, 1)
+        self.scrollbarVertical = tk.Scrollbar(self.root, orient = "vertical", command = self.onSrollY)
+        self.scrollbarHorizontal = tk.Scrollbar(self.root, orient = "horizontal", command = self.onSrollX)
+        self.scrollbarVertical.bind('<Configure>', self.onResizeScrollY)
+        self.scrollbarHorizontal.bind('<Configure>', self.onResizeScrollX)
 
-        # SPELL
-        self.spellChoices = {}
-        self.currentSpell = tk.StringVar(master = self)
-        self.currentSpell.trace_add("write", self.onChangeCurrentSpell)
-        self.currentSpellProperties = {}
+        self.scX: float = 0.0
+        self.scY: float = 0.0
 
-        tk.Label(master = self, text="Choose a spell: ").grid(row = 24, column = 0, sticky = "w")
-        self.spellMenu = ttk.Combobox(master = self, textvariable = self.currentSpell, values = [])
-        self.spellMenu.grid(row = 24, column = 1)
-
-        self.entry_spell_0 = Entry(self, self.currentSpellProperties, "SPELLNAME", 25, 1)
-        self.entry_spell_1 = Entry(self, self.currentSpellProperties, "PROPERTY1", 26, 1)
-        self.entry_spell_2 = Entry(self, self.currentSpellProperties, "PROPERTY2", 27, 1)
-        self.entry_spell_3 = Entry(self, self.currentSpellProperties, "PROPERTY3", 28, 1)
-        self.entry_spell_4 = Entry(self, self.currentSpellProperties, "PROPERTY4", 29, 1)
-        self.entry_spell_5 = Entry(self, self.currentSpellProperties, "MOD1A", 30, 1)
-        self.entry_spell_6 = Entry(self, self.currentSpellProperties, "MOD1B", 31, 1)
-        self.entry_spell_7 = Entry(self, self.currentSpellProperties, "MOD2A", 32, 1)
-        self.entry_spell_8 = Entry(self, self.currentSpellProperties, "MOD2B", 33, 1)
-        self.entry_spell_9 = Entry(self, self.currentSpellProperties, "MOD3A", 34, 1)
-        self.entry_spell_10 = Entry(self, self.currentSpellProperties, "MOD3B", 35, 1)
-        
-        # Buttons
-        self.labelButton = tk.Label(self, text = " ")
-        self.labelButton.grid(row = 36, column = 0, sticky = "w")
-
-        self.buttonSaveCurrent = tk.Button(self, text ="Save Current Language", command = self.saveCurrentLanguage)
-        self.buttonSaveCurrent.grid(row = 37, column = 0, sticky = "w")
-
-        self.buttonSaveAll = tk.Button(self, text ="Save All Languages", command = self.saveAll)
-        self.buttonSaveAll.grid(row = 37, column = 1, sticky = "w")
-
-        self.buttonExportCurrent = tk.Button(self, text ="Export Current Language", command = self.exportCurrentLanguage)
-        self.buttonExportCurrent.grid(row = 38, column = 0, sticky = "w")
-
-        self.buttonExportAll = tk.Button(self, text ="Export All Languages", command = self.exportAll)
-        self.buttonExportAll.grid(row = 38, column = 1, sticky = "w")
-
-        self.buttonResetCurrent = tk.Button(self, text ="Reset Current Language To BASE", command = self.resetCurrent)
-        self.buttonResetCurrent.grid(row = 39, column = 0, sticky = "w")
-
-        self.buttonResetAll = tk.Button(self, text ="Reset All Languages To BASE", command = self.resetAll)
-        self.buttonResetAll.grid(row = 39, column = 1, sticky = "w")
-    
-    def onChangeCurrentLanguage(self, *args, **kwargs):
-        languagePropertiesTest = self.content.get(self.currentLanguage.get())
-        if isinstance(languagePropertiesTest, dict):
-            self.currentLanguageProperties = languagePropertiesTest
-        else:
-            self.currentLanguageProperties = {}
-        self.resetHero()
-    
-    def onChangeCurrentHero(self, *args, **kwargs):
-        heroPropertiesTest = self.currentLanguageProperties.get(self.currentHero.get())
-        if isinstance(heroPropertiesTest, dict):
-            self.currentHeroProperties = heroPropertiesTest
-        else:
-            self.currentHeroProperties = {}
-        self.entry_hero_0.updateContent(self.currentHeroProperties)
-        self.entry_hero_1.updateContent(self.currentHeroProperties)
-        self.resetAspect()
-    
-    def onChangeCurrentAspect(self, *args, **kwargs):
-        self.currentAspectProperties = {}
-        currentAspectIndexTest = self.aspectChoices.get(self.currentAspect.get())
-        if isinstance(currentAspectIndexTest, int):
-            if isinstance(self.currentHeroProperties, dict):
-                aspectList = self.currentHeroProperties.get("ASPECTS")
-                if isinstance(aspectList, list):
-                    try:
-                        self.currentAspectProperties = aspectList[currentAspectIndexTest]
-                    except IndexError as e:
-                        print("ERROR:")
-                        print("    ASPECTLIST: ", aspectList)
-                        print("    currentAspectIndex: ", currentAspectIndexTest)
-                        print("    ERROR: ", e)
-        self.entry_aspect_0.updateContent(self.currentAspectProperties)
-        self.entry_aspect_1.updateContent(self.currentAspectProperties)
-        self.entry_aspect_2.updateContent(self.currentAspectProperties)
-        self.entry_aspect_3.updateContent(self.currentAspectProperties)
-        self.entry_aspect_4.updateContent(self.currentAspectProperties)
-        self.entry_aspect_5.updateContent(self.currentAspectProperties)
-        self.entry_aspect_6.updateContent(self.currentAspectProperties)
-        self.entry_aspect_7.updateContent(self.currentAspectProperties)
-        self.entry_aspect_8.updateContent(self.currentAspectProperties)
-        self.entry_aspect_9.updateContent(self.currentAspectProperties)
-        self.entry_aspect_10.updateContent(self.currentAspectProperties)
-        self.entry_aspect_11.updateContent(self.currentAspectProperties)
-        self.entry_aspect_12.updateContent(self.currentAspectProperties)
-        self.entry_aspect_13.updateContent(self.currentAspectProperties)
-        self.entry_aspect_14.updateContent(self.currentAspectProperties)
-        self.entry_aspect_15.updateContent(self.currentAspectProperties)
-        self.entry_aspect_16.updateContent(self.currentAspectProperties)
-        self.entry_aspect_17.updateContent(self.currentAspectProperties)
-        self.entry_aspect_18.updateContent(self.currentAspectProperties)
-        self.resetSpell()
-    
-    def onChangeCurrentSpell(self, *args, **kwargs):
-        self.currentSpellProperties = {}
-        currentSpellIndexTest = self.spellChoices.get(self.currentSpell.get())
-        if isinstance(currentSpellIndexTest, int):
-            if isinstance(self.currentAspectProperties, dict):
-                spellList = self.currentAspectProperties.get("SPELLS")
-                if isinstance(spellList, list):
-                    try:
-                        self.currentSpellProperties = spellList[currentSpellIndexTest]
-                    except IndexError as e:
-                        pass
-        self.entry_spell_0.updateContent(self.currentSpellProperties)
-        self.entry_spell_1.updateContent(self.currentSpellProperties)
-        self.entry_spell_2.updateContent(self.currentSpellProperties)
-        self.entry_spell_3.updateContent(self.currentSpellProperties)
-        self.entry_spell_4.updateContent(self.currentSpellProperties)
-        self.entry_spell_5.updateContent(self.currentSpellProperties)
-        self.entry_spell_6.updateContent(self.currentSpellProperties)
-        self.entry_spell_7.updateContent(self.currentSpellProperties)
-        self.entry_spell_8.updateContent(self.currentSpellProperties)
-        self.entry_spell_9.updateContent(self.currentSpellProperties)
-        self.entry_spell_10.updateContent(self.currentSpellProperties)
-
-    def resetHero(self):
-        # heroChoices
-        if isinstance(self.currentLanguageProperties, dict):
-            self.heroChoices = list(self.currentLanguageProperties.keys())
-        else:
-            self.heroChoices = []
-        # currentHero
-        if not (self.currentHero.get() in self.heroChoices):
-            self.currentHero.set("")
-        else:
-            self.onChangeCurrentHero()
-        # Widgets
-        self.heroMenu["values"] = self.heroChoices
-
-    def resetAspect(self):
-        # aspectChoices
-        aspectList = []
-        if isinstance(self.currentHeroProperties, dict):
-            aspectList = self.currentHeroProperties.get("ASPECTS")
-        self.aspectChoices = {}
-        if isinstance(aspectList, list):
-            aspectIndex = 0
-            for aspect in aspectList:
-                aspectnameEntry = aspect.get("ASPECTNAME")
-                if isinstance(aspectnameEntry, dict):
-                    aspectname = aspectnameEntry.get("VALUE")
-                    if isinstance(aspectname, str):
-                        self.aspectChoices[aspectname] = aspectIndex
-                aspectIndex += 1
-        # currentAspect
-        if not (self.currentAspect.get() in self.aspectChoices.keys()):
-            self.currentAspect.set("")
-        else:
-            self.onChangeCurrentAspect()
-        # Widgets
-        self.aspectMenu["values"] = list(self.aspectChoices.keys())
+        self.content.bind('<Configure>', self.onResizeContent)
+        self.root.bind('<Configure>', self.onResizeRoot)
             
-    def resetSpell(self):
-        # spellChoices
-        spellList = []
-        if isinstance(self.currentAspectProperties, dict):
-            spellList = self.currentAspectProperties.get("SPELLS")
-        self.spellChoices = {}
-        if isinstance(spellList, list):
-            spellIndex = 0
-            for spell in spellList:
-                spellnameEntry = spell.get("SPELLNAME")
-                if isinstance(spellnameEntry, dict):
-                    spellname = spellnameEntry.get("VALUE")
-                    if isinstance(spellname, str):
-                        self.spellChoices[spellname] = spellIndex
-                spellIndex += 1
-        # currentSpell
-        if not (self.currentSpell.get() in self.spellChoices.keys()):
-            self.currentSpell.set("")
-        else:
-            self.onChangeCurrentSpell()
-        self.spellMenu["values"] = list(self.spellChoices.keys())
+        self.root.update_idletasks()
+        self.widthScrollBar = self.scrollbarVertical.winfo_width()
+        self.widthRoot = self.root.winfo_width()
+        self.widthContent = self.content.winfo_width()
+        self.widthEff = self.widthRoot - self.widthScrollBar
+
+        self.heightScrollBar = self.scrollbarHorizontal.winfo_height()
+        self.heightRoot = self.root.winfo_height()
+        self.heightContent = self.content.winfo_height()
+        self.heightEff = self.heightRoot - self.heightScrollBar
+
+        self.scW: float = self.widthEff / self.widthContent
+        self.scH: float = self.heightEff / self.heightContent
     
-    def display(self, text):
-        self.labelButton["text"] = text
-        self.root.after(5000, self.display, " ")
+        self.placeWidgets()
     
-    def saveCurrentLanguage(self):
-        d = self.content.get(self.currentLanguage.get())
-        if isinstance(d, BoundDict):
-            d.save()
-        self.display("Successfully Saved Current Language!")
+    def onResizeContent(self, event: tk.Event | None, *args, **kwargs):
+        if event == None:
+            return
+        if event.widget != self.content:
+            return
+        self.widthContent = self.content.winfo_width()
+        self.heightContent = self.content.winfo_height()
+        self.scW = self.widthEff / self.widthContent
+        self.scH = self.heightEff / self.heightContent
+        self.placeWidgets()
     
-    def saveAll(self):
-        for d in self.content.values():
-            if isinstance(d, BoundDict):
-                d.save()
-        self.display("Successfully Saved All Languages!")
+    def onResizeRoot(self, event: tk.Event | None, *args, **kwargs):
+        if event == None:
+            return
+        if event.widget != self.root:
+            return
+        self.widthRoot = self.root.winfo_width()
+        self.widthEff = self.widthRoot - self.widthScrollBar
+        self.heightRoot = self.root.winfo_height()
+        self.heightEff = self.heightRoot - self.heightScrollBar
+        self.scW = self.widthEff / self.widthContent
+        self.scH = self.heightEff / self.heightContent
+        self.placeWidgets()
     
-    def exportCurrentLanguage(self):
-        l = self.currentLanguage.get()
-        d = self.content.get(l)
-        if isinstance(l, str) and isinstance(d, BoundDict):
-            export(d, l)
-        self.display("Successfully Exported Current Language!")
+    def onResizeScrollX(self, event: tk.Event | None, *args, **kwargs):
+        if event == None:
+            return
+        if event.widget != self.scrollbarHorizontal:
+            return
+        self.heightScrollBar = self.scrollbarHorizontal.winfo_height()
+        self.heightEff = self.heightRoot - self.heightScrollBar
+        self.scH = self.heightEff / self.heightContent
+        self.placeWidgets()
     
-    def exportAll(self):
-        for item in self.content.items():
-            l = item[0]
-            d = item[1]
-            if isinstance(l, str) and isinstance(d, BoundDict):
-                export(d, l)
-        self.display("Successfully Exported All Languages!")
+    def onResizeScrollY(self, event: tk.Event | None, *args, **kwargs):
+        if event == None:
+            return
+        if event.widget != self.scrollbarVertical:
+            return
+        self.widthScrollBar = self.scrollbarVertical.winfo_width()
+        self.widthEff = self.widthRoot - self.widthScrollBar
+        self.scW = self.widthEff / self.widthContent
+        self.placeWidgets()
     
-    def resetCurrent(self):
-        l = self.currentLanguage.get()
-        d = self.content.get(l)
-        if isinstance(d, BoundDict):
-            reset(l, d)
-        self.display("Successfully Reset Current Language!")
+    def placeWidgets(self):
+
+        #a: list[float | int] = [(self.widthEff - self.widthContent) * 0.5, 0.0]
+        #px = max(a)
+        px = 0
+        offsetX = (((self.widthEff - self.widthContent) / (1.0 - self.scW)) * self.scX)
+        px = px + offsetX
+
+        b: list[float | int] = [(self.heightEff - self.heightContent) * 0.5, 0.0]
+        py = max(b)
+        offsetY = (((self.heightEff - self.heightContent) / (1.0 - self.scH)) * self.scY)
+        py = py + offsetY
+        
+        self.content.place(x = px, y = py)
+        self.scrollbarVertical.place(x = self.widthEff, y = 0, height = self.heightRoot)
+        self.scrollbarHorizontal.place(x = 0, y = self.heightEff, width = self.widthRoot)
+        self.calcScrollX()
+        self.calcScrollY()
     
-    def resetAll(self):
-        for item in self.content.items():
-            l = item[0]
-            d = item[1]
-            if isinstance(l, str) and isinstance(d, BoundDict):
-                reset(l, d)
-        self.display("Successfully Reset All Languages!")
+    def calcScrollX(self, *args, **kwargs):
+        left = self.scX
+        right = left + self.scW
+        self.root.update_idletasks()
+        self.scrollbarHorizontal.set(str(left), str(right))
     
-    def exit(self):
-        self.root.destroy()
+    def calcScrollY(self, *args, **kwargs):
+        top = self.scY
+        bottom = top + self.scH
+        self.root.update_idletasks()
+        self.scrollbarVertical.set(top, bottom)
 
+    def onSrollX(self, a, b, *args):
+        self.scX = float(b)
+        self.placeWidgets()
 
-root = tk.Tk()
-screen_width = root.winfo_screenwidth()
-screen_height = root.winfo_screenheight()
+    def onSrollY(self, a, b, *args):
+        self.scY = float(b)
+        self.placeWidgets()
 
-# main
-main_frame = tk.Frame(root)
-main_frame.pack(fill="both", expand=1)
-
-# top
-top_canvas = tk.Canvas(main_frame)
-top_canvas.pack(side="top", fill="both", expand=1)
-
-# canvas
-my_canvas = tk.Canvas(top_canvas)
-my_canvas.pack(side="left", fill="both", expand=1)
-
-# scrollbar
-scrollbarVertical = tk.Scrollbar(top_canvas, orient="vertical", command=my_canvas.yview)
-scrollbarVertical.pack(side="right", fill="y")
-my_canvas.configure(yscrollcommand=scrollbarVertical.set)
-top_canvas.bind(
-    '<Configure>', lambda e: top_canvas.configure(scrollregion=my_canvas.bbox("all"))
-)
-
-scrollbarHorizontal = tk.Scrollbar(main_frame, orient="horizontal", command=my_canvas.xview)
-scrollbarHorizontal.pack(side="bottom", fill="x")
-my_canvas.configure(xscrollcommand=scrollbarHorizontal.set)
-my_canvas.bind(
-    '<Configure>', lambda e: my_canvas.configure(scrollregion=my_canvas.bbox("all"))
-)
-
-
-
-myApp = App(my_canvas, root)
-
-my_canvas.create_window((0, 0), window=myApp, anchor="nw")
-root.mainloop()
+W = Window()
+W.root.mainloop()
